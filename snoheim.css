@@ -1,3 +1,25 @@
+:root {
+  /* BACKGROUND */
+	--bg-dayimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestday.png?raw=true');
+	--bg-nightimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestnight.png?raw=true');
+}
+
+/* DAY SETTINGS */
+body:has(img[alt="day Time"]) {
+	background-image: var(--bg-dayimg);
+  background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: fixed !important;
+}
+/* NIGHT SETTINGS */
+body:has(img[alt="night Time"]) {
+	background-image: var(--bg-nightimg);
+  background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: fixed !important;
+}
+
+
 
 /* OPACITY SETTINGS */
 .opacity-1 {

@@ -36,6 +36,25 @@
 	--tbnw-msg: "The snow dances under the watch of the stars for you, ";
 	--tbn-badgeclr: #437285;
 	--tbn-badgefontclr: #d0dfe0;
+
+	/* NAVBAR */
+	--nb-font: "Moon Dance";
+	--nb-fontfam: serif;
+	--nb-fontsize: 20px;
+	--nb-logoimg: url('');
+
+	/* NAVBAR / DAY SETTINGS */
+	--nbd-bgclr: #000;
+	--nbd-bgimg: url('');
+	--nbd-linkclr: #fff;
+	--nbd-linkhovclr: #000;
+	
+	/* NAVBAR / NIGHT SETTINGS */
+	--nbn-bgclr: #000;
+	--nbn-bgimg: url('');
+	--nbn-linkclr: #fff;
+	--nbn-linkhovclr: #000;
+	
 }
 
 /* DAY TIME SETTINGS */
@@ -48,6 +67,7 @@
 		background-size: cover !important;
 		background-position: fixed !important;
 	}
+	
 	/* TOPBAR */
 	.topbar {
 		background-color: var(--tbd-bgclr) !important;
@@ -71,32 +91,32 @@
 	img[src*="icon-beetle-silver.png"] {
 		width: 20px !important;
 		height: 20px !important;
-		content: var(--tb-sbicon);
+		content: var(--tb-sbicon) !important;
 	}
 	img[src*="icon-beetle-gold.png"] {
 		width: 20px !important;
 		height: 20px !important;
-		content: var(--tb-gbicon);
+		content: var(--tb-gbicon) !important;
 	}
 	/* WELCOME BACK MESSAGE */
 	.welcomeback {
-			font-size: 0;
+			font-size: 0 !important;
 		}
 	.welcomeback a {
-		font-size: var(--tb-fontsize);
+		font-size: var(--tb-fontsize) !important;
 	}
 	/* WELCOME BACK MESSAGE / DRY SEASON */
 	body:has(img[alt="dry Season"]) {
 		.welcomeback::before {
-			content: var(--tbdd-msg);
-			font-size: var(--tb-fontsize);
+			content: var(--tbdd-msg) !important;
+			font-size: var(--tb-fontsize) !important;
 		}
 	}
 	/* WELCOME BACK MESSAGE / WET SEASON */
 	body:has(img[alt="wet Season"]) {
 		.welcomeback::before {
-			content: var(--tbdw-msg);
-			font-size: var(--tb-fontsize);
+			content: var(--tbdw-msg) !important;
+			font-size: var(--tb-fontsize) !important;
 		}
 	}
 	/* MESSAGE NOTIFICATION */
@@ -104,16 +124,26 @@
 		background-color: var(--tbd-badgeclr) !important;
 		color: var(--tbd-badgefontclr) !important;
 	}
+
+	/* NAVBAR */
+	.navbar {
+		background-color: var(--nbd-bgclr) !important;
+		font-family: var(--nb-font), var(--nb-fontfam) !important;
+	}
+	.navbar a {
+		color: var(--nbd-linkclr) !important;
+	}
 }
 /* NIGHT TIME SETTINGS */
 *:has(img[alt="night Time"]) {
 	body {
 		background-color: var(--bg-nightclr) !important;
-		background-image: var(--bg-nightimg);
+		background-image: var(--bg-nightimg) !important;
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 		background-position: fixed !important;
 	}
+	
 	/* TOPBAR */
 	.topbar {
 		background-color: var(--tbn-bgclr) !important;
@@ -137,35 +167,34 @@
 	img[src*="icon-beetle-silver.png"] {
 		width: 20px !important;
 		height: 20px !important;
-		content: var(--tb-sbicon);
+		content: var(--tb-sbicon) !important;
 		filter: brightness(0.8);
 	}
 	img[src*="icon-beetle-gold.png"] {
 		width: 20px !important;
 		height: 20px !important;
-		content: var(--tb-gbicon);
+		content: var(--tb-gbicon) !important;
 		filter: brightness(0.8);
 	}
 	/* WELCOME BACK MESSAGE */
 	.welcomeback {
-		font-size: 0;
+		font-size: 0 !important;
 	}
 	.welcomeback a {
-		font-size: var(--tb-fontsize);
+		font-size: var(--tb-fontsize) !important;
 	}
 	/* WELCOME BACK MESSAGE / DRY SEASON */
 	body:has(img[alt="dry Season"]) {
-
 		.welcomeback::before {
-			content: var(--tbnd-msg);
-			font-size: var(--tb-fontsize);
+			content: var(--tbnd-msg) !important;
+			font-size: var(--tb-fontsize) !important;
 		}
 	}
 	/* WELCOME BACK MESSAGE / WET SEASON */
 	body:has(img[alt="wet Season"]) {
 		.welcomeback::before {
-			content: var(--tbnw-msg);
-			font-size: var(--tb-fontsize);
+			content: var(--tbnw-msg) !important;
+			font-size: var(--tb-fontsize) !important;
 		}
 	}
 	/* MESSAGE NOTIFICATION */
@@ -179,7 +208,7 @@
 /* MESSAGE NOTIFICATION ANIMATION */
 @keyframes shake {
 	0%, 70%, 100% { 
-		transform: translate3d(0, 0, 0);  /* pause most of the time */
+		transform: translate3d(0, 0, 0);  
   }
 
 	71% { 

@@ -4,7 +4,9 @@
 :root {
 	/* BACKGROUND */
 	--bg-dayimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestday.png?raw=true');
+	--bg-dayclr: #dcf1f4;
 	--bg-nightimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestnight.png?raw=true');
+	--bg-nightclr: #213f4c;
 
 	/* TOPBAR */
 	--tb-font: "Moon Dance";
@@ -40,6 +42,7 @@
 *:has(img[alt="day Time"]) {
 	/* BACKGROUND */
 	body {
+		background-color: var(--bg-dayclr) !important;
 		background-image: var(--bg-dayimg) !important; 
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
@@ -107,6 +110,7 @@
 /* NIGHT TIME SETTINGS */
 *:has(img[alt="night Time"]) {
 	body {
+		background-color: var(--bg-nightclr) !important;
 		background-image: var(--bg-nightimg);
 		background-repeat: no-repeat !important;
 		background-size: cover !important;

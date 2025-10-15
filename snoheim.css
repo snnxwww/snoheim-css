@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Moon+Dance&family=Redressed&display=swap');
 
 
 :root {
@@ -38,22 +38,22 @@
 	--tbn-badgefontclr: #d0dfe0;
 
 	/* NAVBAR */
-	--nb-font: "Moon Dance";
+	--nb-font: "Jim Nightshade";
 	--nb-fontfam: serif;
-	--nb-fontsize: 20px;
+	--nb-fontsize: 24px;
 	--nb-logoimg: url('');
 
 	/* NAVBAR / DAY SETTINGS */
-	--nbd-bgclr: #000;
+	--nbd-bgclr: #c3d7da;
 	--nbd-bgimg: url('');
-	--nbd-linkclr: #fff;
-	--nbd-linkhovclr: #000;
+	--nbd-linkclr: #6b797b;
+	--nbd-linkhovclr: #80a5af;
 	
 	/* NAVBAR / NIGHT SETTINGS */
-	--nbn-bgclr: #000;
+	--nbn-bgclr: #295061;
 	--nbn-bgimg: url('');
-	--nbn-linkclr: #fff;
-	--nbn-linkhovclr: #000;
+	--nbn-linkclr: #b8c4c5;
+	--nbn-linkhovclr: #86a2a9;
 	
 }
 
@@ -129,9 +129,45 @@
 	.navbar {
 		background-color: var(--nbd-bgclr) !important;
 		font-family: var(--nb-font), var(--nb-fontfam) !important;
+		padding: 0px !important;
+		height: 50px !important;
+		
 	}
 	.navbar a {
 		color: var(--nbd-linkclr) !important;
+		font-size: var(--nb-fontsize) !important;
+		transition: 0.5s !important;
+		@media (min-width: 1199px) {
+			padding-top: 17px !important;
+		}
+		@media (max-width: 1199px) {
+			padding-top: 18px !important;
+		}
+		@media (max-width: 991px) {
+			padding-top: 22px !important;
+			margin: -2.5px !important;
+		}
+	}
+	.navbar a:hover {
+		background-color: transparent !important;
+		color: var(--nbd-linkhovclr) !important;
+		font-size: calc(var(--nb-fontsize)*1.15) !important;
+		transition: 0.5s !important;
+
+	}
+	.navbar a::before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 2px;
+		bottom: 0;
+		left: 50%;
+		background-color: var(--nbd-linkhovclr);
+		transition: all 0.4s;
+	}
+	.navbar a:hover::before {
+		width: 100%;
+		left: 0;
 	}
 }
 /* NIGHT TIME SETTINGS */
@@ -201,6 +237,51 @@
 	.badge {
 		background-color: var(--tbn-badgeclr) !important;
 		color: var(--tbn-badgefontclr) !important;
+	}
+
+	/* NAVBAR */
+	.navbar {
+		background-color: var(--nbn-bgclr) !important;
+		font-family: var(--nb-font), var(--nb-fontfam) !important;
+		padding: 0px !important;
+		height: 50px !important;
+		
+	}
+	.navbar a {
+		color: var(--nbn-linkclr) !important;
+		font-size: var(--nb-fontsize) !important;
+		transition: 0.5s !important;
+		@media (min-width: 1199px) {
+			padding-top: 17px !important;
+		}
+		@media (max-width: 1199px) {
+			padding-top: 18px !important;
+		}
+		@media (max-width: 991px) {
+			padding-top: 22px !important;
+			margin: -2.5px !important;
+		}
+	}
+	.navbar a:hover {
+		background-color: transparent !important;
+		color: var(--nbn-linkhovclr) !important;
+		font-size: calc(var(--nb-fontsize)*1.15) !important;
+		transition: 0.5s !important;
+
+	}
+	.navbar a::before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 2px;
+		bottom: 0;
+		left: 50%;
+		background-color: var(--nbn-linkhovclr);
+		transition: all 0.4s;
+	}
+	.navbar a:hover::before {
+		width: 100%;
+		left: 0;
 	}
 }
 

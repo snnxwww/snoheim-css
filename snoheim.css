@@ -67,6 +67,7 @@
 		transition: 0.5s !important;
 
 	}
+	/* ICON REPLACEMENT */
 	img[src*="icon-beetle-silver.png"] {
 		width: 20px !important;
 		height: 20px !important;
@@ -77,30 +78,28 @@
 		height: 20px !important;
 		content: var(--tb-gbicon);
 	}
-	body:has(img[alt="dry Season"]) {
-		.welcomeback {
+	/* WELCOME BACK MESSAGE */
+	.welcomeback {
 			font-size: 0;
 		}
-		.welcomeback a {
-			font-size: var(--tb-fontsize);
-		}
+	.welcomeback a {
+		font-size: var(--tb-fontsize);
+	}
+	/* WELCOME BACK MESSAGE / DRY SEASON */
+	body:has(img[alt="dry Season"]) {
 		.welcomeback::before {
 			content: var(--tbdd-msg);
 			font-size: var(--tb-fontsize);
 		}
 	}
+	/* WELCOME BACK MESSAGE / WET SEASON */
 	body:has(img[alt="wet Season"]) {
-		.welcomeback {
-			font-size: 0;
-		}
-		.welcomeback a {
-			font-size: var(--tb-fontsize);
-		}
 		.welcomeback::before {
 			content: var(--tbdw-msg);
 			font-size: var(--tb-fontsize);
 		}
 	}
+	/* MESSAGE NOTIFICATION */
 	.badge {
 		background-color: var(--tbd-badgeclr) !important;
 		color: var(--tbd-badgefontclr) !important;
@@ -134,6 +133,7 @@
 		transition: 0.5s !important;
 
 	}
+	/* ICON REPLACEMENT */
 	img[src*="icon-beetle-silver.png"] {
 		width: 20px !important;
 		height: 20px !important;
@@ -146,30 +146,29 @@
 		content: var(--tb-gbicon);
 		filter: brightness(0.8);
 	}
+	/* WELCOME BACK MESSAGE */
+	.welcomeback {
+		font-size: 0;
+	}
+	.welcomeback a {
+		font-size: var(--tb-fontsize);
+	}
+	/* WELCOME BACK MESSAGE / DRY SEASON */
 	body:has(img[alt="dry Season"]) {
-		.welcomeback {
-			font-size: 0;
-		}
-		.welcomeback a {
-			font-size: var(--tb-fontsize);
-		}
+
 		.welcomeback::before {
 			content: var(--tbnd-msg);
 			font-size: var(--tb-fontsize);
 		}
 	}
+	/* WELCOME BACK MESSAGE / WET SEASON */
 	body:has(img[alt="wet Season"]) {
-		.welcomeback {
-			font-size: 0;
-		}
-		.welcomeback a {
-			font-size: var(--tb-fontsize);
-		}
 		.welcomeback::before {
 			content: var(--tbnw-msg);
 			font-size: var(--tb-fontsize);
 		}
 	}
+	/* MESSAGE NOTIFICATION */
 	.badge {
 		background-color: var(--tbn-badgeclr) !important;
 		color: var(--tbn-badgefontclr) !important;

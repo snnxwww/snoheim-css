@@ -1,22 +1,104 @@
 :root {
-  /* BACKGROUND */
+	/* BACKGROUND */
 	--bg-dayimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestday.png?raw=true');
 	--bg-nightimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestnight.png?raw=true');
+
+	/* TOPBAR */
+	--tb-font: "Moon Dance";
+	--tb-fontfam: serif;
+	--tb-fontsize: 20px;
+	--tb-sbicon: url('https://github.com/snnxwww/snoheim-css/blob/main/iceshard.png?raw=true');
+	--tb-gbicon: url('https://github.com/snnxwww/snoheim-css/blob/main/snowshard.png?raw=true');
+	
+	/* TOPBAR / DAY SETTINGS */
+	--tbd-bgclr: #dcf1f4;
+	--tbd-bgimg: url('');
+	--tbd-linkclr: #80a5af;
+	--tbd-linkhovclr: #47676b;
+	--tbd-fontclr: #6b797b;
+	--tbdd-msg: "The sunkissed peaks glisten in your presence, ";
+	--tbdw-msg: "The thawing snow stirs with your return, ";
+	
+	/* TOPBAR / NIGHT SETTINGS */
+	
+	--tbnd-msg: "dry season night placeholder";
+	--tbnw-msg: "wet season night placeholder";
+	
 }
 
-/* DAY SETTINGS */
-body:has(img[alt="day Time"]) {
-	background-image: var(--bg-dayimg);
-  background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: fixed !important;
+/* DAY TIME SETTINGS */
+*:has(img[alt="day Time"]) {
+	/* BACKGROUND */
+	body {
+		background-image: var(--bg-dayimg) !important; 
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
+	}
+	/* TOPBAR */
+	.topbar {
+		background-color: var(--tbd-bgclr) !important;
+		background-image: var(--tbd-bgimg) !important;
+		color: var(--tbd-fontclr) !important;
+		font-family: var(--tb-font), var(--tb-fontfam) !important;
+		font-size: var(--tb-fontsize) !important;
+		height: 45px !important;
+		line-height: 30px !important;
+	}
+	.topbar a {
+		color: var(--tbd-linkclr) !important;
+		transition: 0.5s !important;
+	}
+	.topbar a:hover {
+		color: var(--tbd-linkhovclr) !important;
+		font-size: calc(var(--tb-fontsize)*1.05) !important;
+		transition: 0.5s !important;
+
+	}
+	img[src*="icon-beetle-silver.png"] {
+		width: 20px !important;
+		height: 20px !important;
+		content: var(--tb-sbicon);
+	}
+	img[src*="icon-beetle-gold.png"] {
+		width: 20px !important;
+		height: 20px !important;
+		content: var(--tb-gbicon);
+	}
+	body:has(img[alt="dry Season"]) {
+		.welcomeback {
+			font-size: 0;
+		}
+		.welcomeback a {
+			font-size: var(--tb-fontsize);
+		}
+		.welcomeback::before {
+			content: var(--tbdd-msg);
+			font-size: var(--tb-fontsize);
+		}
+	}
+	body:has(img[alt="wet Season"]) {
+		.welcomeback {
+			font-size: 0;
+		}
+		.welcomeback a {
+			font-size: var(--tb-fontsize);
+		}
+		.welcomeback::before {
+			content: var(--tbdw-msg);
+			font-size: var(--tb-fontsize);
+		}
+	}
 }
-/* NIGHT SETTINGS */
-body:has(img[alt="night Time"]) {
-	background-image: var(--bg-nightimg);
-  background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: fixed !important;
+/* NIGHT TIME SETTINGS */
+*:has(img[alt="night Time"]) {
+	body {
+		background-image: var(--bg-nightimg);
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
+
+	}
 }
 
 

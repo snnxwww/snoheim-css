@@ -155,7 +155,8 @@
 		transition: 0.5s !important;
 
 	}
-	.navbar a::before {
+	.navbar a:not(:has(img[src*="logo-full-2.png"]))::before {
+
 		content: "";
 		position: absolute;
 		width: 0;
@@ -165,11 +166,18 @@
 		background-color: var(--nbd-linkhovclr);
 		transition: all 0.4s;
 	}
-	.navbar a:hover::before {
+	.navbar a:not(:has(img[src*="logo-full-2.png"])):hover::before {
 		width: 100%;
 		left: 0;
 	}
+	img[src*="logo-full-2.png"] {
+		width: 192px !important;
+		height: 120px !important;
+		content: var(--nb-logoimg) !important;
+	}
 }
+
+
 /* NIGHT TIME SETTINGS */
 *:has(img[alt="night Time"]) {
 	body {
@@ -269,7 +277,8 @@
 		transition: 0.5s !important;
 
 	}
-	.navbar a::before {
+	.navbar a:not(:has(img[src*="logo-full-2.png"]))::before {
+
 		content: "";
 		position: absolute;
 		width: 0;
@@ -279,11 +288,17 @@
 		background-color: var(--nbn-linkhovclr);
 		transition: all 0.4s;
 	}
-	.navbar a:hover::before {
+	.navbar a:not(:has(img[src*="logo-full-2.png"])):hover::before {
 		width: 100%;
 		left: 0;
 	}
-}
+	img[src*="logo-full-2.png"] {
+		width: 192px !important;
+		height: 120px !important;
+		content: var(--nb-logoimg) !important;
+		filter: brightness(0.8) !important;
+	}
+
 
 
 /* MESSAGE NOTIFICATION ANIMATION */

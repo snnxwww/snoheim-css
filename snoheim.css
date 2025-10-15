@@ -129,9 +129,7 @@
 	.navbar {
 		background-color: var(--nbd-bgclr) !important;
 		font-family: var(--nb-font), var(--nb-fontfam) !important;
-		padding: 0px !important;
-		height: 50px !important;
-		
+		padding: 0px !important;	
 	}
 	.navbar a {
 		color: var(--nbd-linkclr) !important;
@@ -153,10 +151,8 @@
 		color: var(--nbd-linkhovclr) !important;
 		font-size: calc(var(--nb-fontsize)*1.15) !important;
 		transition: 0.5s !important;
-
 	}
 	.navbar a:not(:has(img[src*="logo-full-2.png"]))::before {
-
 		content: "";
 		position: absolute;
 		width: 0;
@@ -251,9 +247,7 @@
 	.navbar {
 		background-color: var(--nbn-bgclr) !important;
 		font-family: var(--nb-font), var(--nb-fontfam) !important;
-		padding: 0px !important;
-		height: 50px !important;
-		
+		padding: 0px !important;		
 	}
 	.navbar a {
 		color: var(--nbn-linkclr) !important;
@@ -278,7 +272,6 @@
 
 	}
 	.navbar a:not(:has(img[src*="logo-full-2.png"]))::before {
-
 		content: "";
 		position: absolute;
 		width: 0;

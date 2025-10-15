@@ -176,7 +176,7 @@
 }
 
 
-/* MESSAGE NOTIFICATION BADGE */
+/* MESSAGE NOTIFICATION ANIMATION */
 @keyframes shake {
 	0%, 70%, 100% { 
 		transform: translate3d(0, 0, 0);  /* pause most of the time */

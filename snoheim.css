@@ -55,8 +55,7 @@
 		color: var(--tbd-fontclr) !important;
 		font-family: var(--tb-font), var(--tb-fontfam) !important;
 		font-size: var(--tb-fontsize) !important;
-		height: 45px !important;
-		line-height: 30px !important;
+		height: 35px !important;
 	}
 	.topbar a {
 		color: var(--tbd-linkclr) !important;
@@ -123,8 +122,7 @@
 		color: var(--tbn-fontclr) !important;
 		font-family: var(--tb-font), var(--tb-fontfam) !important;
 		font-size: var(--tb-fontsize) !important;
-		height: 45px !important;
-		line-height: 30px !important;
+		height: 35px !important;
 	}
 	.topbar a {
 		color: var(--tbn-linkclr) !important;

@@ -14,15 +14,19 @@
 	--tbd-bgclr: #dcf1f4;
 	--tbd-bgimg: url('');
 	--tbd-linkclr: #80a5af;
-	--tbd-linkhovclr: #47676b;
+	--tbd-linkhovclr: #586465;
 	--tbd-fontclr: #6b797b;
 	--tbdd-msg: "The sunkissed peaks glisten in your presence, ";
-	--tbdw-msg: "The thawing snow stirs with your return, ";
+	--tbdw-msg: "The snow twirls under the warmth of the sun at your return, ";
 	
 	/* TOPBAR / NIGHT SETTINGS */
-	
-	--tbnd-msg: "dry season night placeholder";
-	--tbnw-msg: "wet season night placeholder";
+	--tbn-bgclr: #213f4c;
+	--tbn-bgimg: url('');
+	--tbn-linkclr: #86a2a9;
+	--tbn-linkhovclr: #cedcdd;
+	--tbn-fontclr: #b8c4c5;
+	--tbnd-msg: "The moon casts its light upon the snow at your arrival,  ";
+	--tbnw-msg: "The snow dances under the watch of the stars for you, ";
 	
 }
 
@@ -97,7 +101,62 @@
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 		background-position: fixed !important;
+	}
+	/* TOPBAR */
+	.topbar {
+		background-color: var(--tbn-bgclr) !important;
+		background-image: var(--tbn-bgimg) !important;
+		color: var(--tbn-fontclr) !important;
+		font-family: var(--tb-font), var(--tb-fontfam) !important;
+		font-size: var(--tb-fontsize) !important;
+		height: 45px !important;
+		line-height: 30px !important;
+	}
+	.topbar a {
+		color: var(--tbn-linkclr) !important;
+		transition: 0.5s !important;
+	}
+	.topbar a:hover {
+		color: var(--tbn-linkhovclr) !important;
+		font-size: calc(var(--tb-fontsize)*1.05) !important;
+		transition: 0.5s !important;
 
+	}
+	img[src*="icon-beetle-silver.png"] {
+		width: 20px !important;
+		height: 20px !important;
+		content: var(--tb-sbicon);
+		filter: brightness(0.8);
+	}
+	img[src*="icon-beetle-gold.png"] {
+		width: 20px !important;
+		height: 20px !important;
+		content: var(--tb-gbicon);
+		filter: brightness(0.8);
+	}
+	body:has(img[alt="dry Season"]) {
+		.welcomeback {
+			font-size: 0;
+		}
+		.welcomeback a {
+			font-size: var(--tb-fontsize);
+		}
+		.welcomeback::before {
+			content: var(--tbnd-msg);
+			font-size: var(--tb-fontsize);
+		}
+	}
+	body:has(img[alt="wet Season"]) {
+		.welcomeback {
+			font-size: 0;
+		}
+		.welcomeback a {
+			font-size: var(--tb-fontsize);
+		}
+		.welcomeback::before {
+			content: var(--tbnw-msg);
+			font-size: var(--tb-fontsize);
+		}
 	}
 }
 

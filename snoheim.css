@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
+
 :root {
 	/* BACKGROUND */
 	--bg-dayimg: url('https://github.com/snnxwww/snoheim-css/blob/main/snowyforestday.png?raw=true');
@@ -8,7 +9,7 @@
 	/* TOPBAR */
 	--tb-font: "Moon Dance";
 	--tb-fontfam: serif;
-	--tb-fontsize: 20px;
+	--tb-fontsize: 16px;
 	--tb-sbicon: url('https://github.com/snnxwww/snoheim-css/blob/main/iceshard.png?raw=true');
 	--tb-gbicon: url('https://github.com/snnxwww/snoheim-css/blob/main/snowshard.png?raw=true');
 	
@@ -20,6 +21,8 @@
 	--tbd-fontclr: #6b797b;
 	--tbdd-msg: "The sunkissed peaks glisten in your presence, ";
 	--tbdw-msg: "The snow twirls under the warmth of the sun at your return, ";
+	--tbd-badgeclr: #afd0d4;
+	--tbd-badgefontclr: #515c5e;
 	
 	/* TOPBAR / NIGHT SETTINGS */
 	--tbn-bgclr: #213f4c;
@@ -29,7 +32,8 @@
 	--tbn-fontclr: #b8c4c5;
 	--tbnd-msg: "The moon casts its light upon the snow at your arrival,  ";
 	--tbnw-msg: "The snow dances under the watch of the stars for you, ";
-	
+	--tbn-badgeclr: #437285;
+	--tbn-badgefontclr: #d0dfe0;
 }
 
 /* DAY TIME SETTINGS */
@@ -94,6 +98,10 @@
 			content: var(--tbdw-msg);
 			font-size: var(--tb-fontsize);
 		}
+	}
+	.badge {
+		background-color: var(--tbd-badgeclr) !important;
+		color: var(--tbd-badgefontclr) !important;
 	}
 }
 /* NIGHT TIME SETTINGS */
@@ -160,8 +168,51 @@
 			font-size: var(--tb-fontsize);
 		}
 	}
+	.badge {
+		background-color: var(--tbn-badgeclr) !important;
+		color: var(--tbn-badgefontclr) !important;
+	}
 }
 
+
+/* MESSAGE NOTIFICATION BADGE */
+@keyframes shake {
+	0%, 70%, 100% { 
+		transform: translate3d(0, 0, 0);  /* pause most of the time */
+  }
+
+	71% { 
+		transform: translate3d(-0.5px, 0, 0); 
+  }
+	73% { 
+		transform: translate3d(1px, 0, 0); 
+  }
+	75% { 
+		transform: translate3d(-1px, 0, 0); 
+  }
+	77% { 
+		transform: translate3d(2px, 0, 0); 
+  }
+	79% { 
+		transform: translate3d(-1px, 0, 0); 
+  }
+	81% { 
+		transform: translate3d(1px, 0, 0); 
+  }
+	83% { 
+		transform: translate3d(-0.5px, 0, 0); 
+  }
+	85% { 
+		transform: translate3d(0, 0, 0); 
+  } 
+}
+.badge {
+	animation: shake 3s cubic-bezier(.36,.07,.19,.97) both;
+	animation-iteration-count: infinite; 
+	position: relative; 
+	top: -4.5px;  
+	left: -2px; 
+}
 
 
 /* OPACITY SETTINGS */

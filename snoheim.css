@@ -275,6 +275,7 @@
 		color: var(--alrtd-fontclr) !important;
 		font-family: var (--alrt-font), var(--alrt-fontfam) !important;
 		font-size: var(--alrt-fontsize) !important;
+		border: none !important;
 	}
 	.alert.alert-success {
 		background-color: var(--alrtd-gnbgclr) !important;
@@ -552,6 +553,7 @@
 		color: var(--alrtn-fontclr) !important;
 		font-family: var (--alrt-font), var(--alrt-fontfam) !important;
 		font-size: var(--alrt-fontsize) !important;
+		border: none;
 	}
 	.alert.alert-success {
 		background-color: var(--alrtn-gnbgclr) !important;

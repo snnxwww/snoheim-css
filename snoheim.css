@@ -54,7 +54,33 @@
 	--nbn-bgimg: url('');
 	--nbn-linkclr: #b8c4c5;
 	--nbn-linkhovclr: #86a2a9;
+
+	/* MAIN PANEL */
+	--mn-font: "";
+	--mn-fontfam: serif;
+	--mn-fontsize: 16px;
+
+	/* MAIN PANEL / DAY SETTINGS */
+	--mnd-bgclr: #cfdee0;
+	--mnd-bgimg: url('')l
 	
+	/* MAIN PANEL / NIGHT SETTINGS */
+	--mnn-bgimg: url('');
+	--mnn-bgclr: #2f5a6c;
+
+	/* SIDE PANEL */
+	--sd-font: "";
+	--sd-fontfam: serif;
+	--sd-fontsize: 16px;
+	
+	/* SIDE PANEL / DAY SETTINGS */
+	--sdd-bgclr: #b7c9cc;
+	--sdd-bgimg: url('');
+	
+	/* SIDE PANEL / NIGHT SETTINGS */
+	--sdn-bgclr: #4c707f;
+	--sdn-bgimg: url('');
+
 }
 
 /* DAY TIME SETTINGS */
@@ -72,6 +98,9 @@
 	.topbar {
 		background-color: var(--tbd-bgclr) !important;
 		background-image: var(--tbd-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
 		color: var(--tbd-fontclr) !important;
 		font-family: var(--tb-font), var(--tb-fontfam) !important;
 		font-size: var(--tb-fontsize) !important;
@@ -128,6 +157,10 @@
 	/* NAVBAR */
 	.navbar {
 		background-color: var(--nbd-bgclr) !important;
+		background-image: var(--nbd-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
 		font-family: var(--nb-font), var(--nb-fontfam) !important;
 		padding: 0px !important;		
 	}
@@ -184,6 +217,24 @@
 		background-color: var(--nbd-linkhovclr);
 	}
 
+	/* MAIN PANEL */
+	.col-md-9 {
+		background-color: var(--mnd-bgclr) !important;
+		background-image: var(--mnd-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
+	}
+
+	/* SIDE PANEL */
+	.main {
+		background-color: var(--sdd-bgclr) !important;
+		background-image: var(--sdd-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
+	}
+
 }
 
 
@@ -201,6 +252,9 @@
 	.topbar {
 		background-color: var(--tbn-bgclr) !important;
 		background-image: var(--tbn-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
 		color: var(--tbn-fontclr) !important;
 		font-family: var(--tb-font), var(--tb-fontfam) !important;
 		font-size: var(--tb-fontsize) !important;
@@ -259,6 +313,10 @@
 	/* NAVBAR */
 	.navbar {
 		background-color: var(--nbn-bgclr) !important;
+		background-image: var(--nbn-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
 		font-family: var(--nb-font), var(--nb-fontfam) !important;
 		padding: 0px !important;
 		
@@ -314,6 +372,24 @@
 	}
 	.navbar-toggle:hover .icon-bar {
 		background-color: var(--nbn-linkhovclr);
+	}
+
+	/* MAIN PANEL */
+	.col-md-9 {
+		background-color: var(--mnn-bgclr) !important;
+		background-image: var(--mnn-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
+	}
+
+	/* SIDE PANEL */
+	.main {
+		background-color: var(--sdn-bgclr) !important;
+		background-image: var(--sdn-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
 	}
 }
 

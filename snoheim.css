@@ -707,6 +707,7 @@ h1 {
     padding-bottom: 0px !important;
     max-width: 640px;
     margin-top: 40px;
+	overflow: visible !important;
 }
 .col-md-9 {
 	background: #C7CDC9;

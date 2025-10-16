@@ -112,9 +112,10 @@
 	--featd-fontclr: #dae6e8;
 	
 	
-	
 	/* FEATURE LION / NIGHT */
-	
+	--featn-bgimg: url('https://github.com/snnxwww/snoheim-css/blob/main/frozenvallynight.png?raw=true');
+	--featn-hdfontclr: #5c8090;
+	--featn-fontclr: #6e92a3;
 }
 
 /* DAY TIME SETTINGS */
@@ -429,13 +430,13 @@
 		width: 20px !important;
 		height: 20px !important;
 		content: var(--tb-sbicon) !important;
-		filter: brightness(0.8);
+		filter: brightness(0.7);
 	}
 	img[src*="icon-beetle-gold.png"] {
 		width: 20px !important;
 		height: 20px !important;
 		content: var(--tb-gbicon) !important;
-		filter: brightness(0.8);
+		filter: brightness(0.7);
 	}
 	/* WELCOME BACK MESSAGE */
 	.welcomeback {
@@ -566,6 +567,106 @@
 	.alert a:hover {
 		color: var(--alrtn-linkhovclr) !important;
 		transform: translateX(4px) !important;
+	}
+
+	/* FEATURE LION */
+	.breadcrumb {
+		background-color: transparent !important;
+		border-radius: 0px !important;
+		height: 600px !important;
+		background-image: var(--featn-bgimg) !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: fixed !important;
+		margin-left: -14.5px !important;
+		width: 103.5% !important;
+		@media (min-width: 1200px) {
+			width: 103.55% !important;
+			margin-left: -15px !important;
+			}
+		@media (max-width: 1199px){
+			width: 104.35% !important;
+			margin-left: -15px !important;			
+			}
+		@media (max-width: 994px){
+			width: 104.2% !important;
+			margin-left: -15px !important;				
+		}
+		@media (max-width: 768px){
+			width: 105.25% !important;
+			margin-left: -15px !important;				
+		}
+	}
+	/* NAME AND TITLE */
+	.top.center {
+	    position: relative;
+		z-index: 20;
+	}
+	.top.center .xlarge.b {
+	    position: absolute;
+	    top: -980px; 
+		right: 30px;
+		color: var(--featn-hdfontclr) !important;
+		font-size: var(--feat-hdfontsize) !important;
+		font-family: var(--feat-hdfont) !important;
+
+	}
+	.top.center .xlarge.b a {
+		color: var(--featn-hdfontclr) !important;
+	    font-size: calc(var(--feat-hdfontsize)*1.0.5) !important;
+		font-family: var(--feat-hdfont) !important;
+		transition: 0.5s !important;
+	}
+	.top.center .xlarge.b a:hover {
+		text-shadow: 0px 0px 1px var(--featn-hdfontclr), 
+		0px 0px 10px var(--featn-hdfontclr) !important;
+	}
+	/* BOOKMARK BUTTON */
+	.floatright form {
+	    z-index: 20 !important;
+	}
+	.floatright form input[type="submit"] {
+	    background: transparent !important;
+	    border: none !important;
+	    font-size: 0px !important;
+	    width: 160px; 
+	    height: 40px; 
+	    cursor: pointer;
+		transition: 0.5s !important;
+
+	}
+	.floatright form::before {
+	    content: "Bookmark ⟶";
+	    position: absolute;
+	    transform: translate(0%, 20%);
+	    font-size: var(--feat-fontsize) !important;
+	    color: var(--featn-fontclr);
+	    font-family: var(--feat-font) !important;
+	    pointer-events: none; 
+	    transition: 0.5s !important; 
+	}
+	.floatright form:hover::before {
+	    transform: translate(10%, 20%); 
+	}
+	.feature-stud {
+	    position: relative;
+	    top: -620px;
+	    z-index: 5;
+		filter: brightness(0.7);
+	}
+	.feature-stud img {
+	    position: absolute;
+		top: 0;
+		left: 12.5%;
+		@media (max-width: 1199px){
+			left: 5% !important;	
+		}
+		@media (max-width: 992px){
+			left: 5% !important;	
+		}
+		@media (max-width: 768px){
+			left: 5% !important;	
+		}
 	}
 }
 

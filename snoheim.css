@@ -83,19 +83,19 @@
 	/* ALERTS */
 	--alrt-font: "";
 	--alrt-fontfam: serif;
-	--alrt-fontsize: 12px;
+	--alrt-fontsize: 10px;
 	
 	/* ALERTS / DAY SETTINGS */
-	--alrtd-gnbgclr: #c2d9dd;
-	--alrtd-mnbgclr: #cde9ed;
-	--alrtd-fontclr: #6b797b;
-	--alrtd-linkclr: #80a5af;
-	--alrtd-linkhovclr: #95c1cd;
+	--alrtd-gnbgclr: #c2d9dd80;
+	--alrtd-mnbgclr: #d0e0e380;
+	--alrtd-fontclr: #1b2325;
+	--alrtd-linkclr: #45575c;
+	--alrtd-linkhovclr: #5d757c;
 	
 	/* ALERTS / NIGHT SETTINGS */
-	--alrtn-gnbgclr: #436675;
-	--alrtn-mnbgclr: #2b4d5b;
-	--alrtn-fontclr: #b8c4c5;
+	--alrtn-gnbgclr: #43667580;
+	--alrtn-mnbgclr: #2b4d5b80;
+	--alrtn-fontclr: #85a6a9;
 	--alrtn-linkclr: #86a2a9;
 	--alrtn-linkhovclr: #5b7981;
 
@@ -272,7 +272,36 @@ img[src*="logo-full-2.png"] {
 	font-family: var(--alrt-font), var(--alrt-fontfam) !important;
 	font-size: var(--alrt-fontsize) !important;
 	border: none !important;
+	position: absolute !important;
+	top: 0.2% !important;
+	left: 10px !important;
+	width: 70% !important;
+	margin: 0 !important;
+	padding: 4px !important;
+	padding-left: 10px !important;
+	z-index: 25 !important;
 }
+
+.alert + .alert {
+	transform: translateY(25px);
+}
+.alert + .alert + .alert {
+	transform: translateY(50px);
+}
+.alert + .alert + .alert + .alert {
+	transform: translateY(75px);
+}
+.alert + .alert + .alert + .alert + .alert {
+	transform: translateY(100px);
+}
+.alert + .alert + .alert + .alert + .alert + .alert {
+	transform: translateY(125px);
+}
+.alert + .alert + .alert + .alert + .alert + .alert + .alert {
+	transform: translateY(150px);
+}
+
+
 .alert a {
 	transition: 0.5s !important;
 	display: inline-block !important;
@@ -280,6 +309,8 @@ img[src*="logo-full-2.png"] {
 .alert a:hover {
 	transform: translateX(4px) !important;
 }
+
+
 
 
 /* FEATURE LION */
@@ -307,7 +338,7 @@ h1 {
 	} /* NAME AND TITLE */
 .top.center .xlarge.b {
 	position: absolute !important;
-	top: 60px !important; 
+	top: 110px !important; 
 	right: 5% !important;
 	z-index: 10 !important;
 	font-size: var(--feat-hdfontsize) !important;
@@ -323,7 +354,7 @@ h1 {
 } /* BOOKMARK BUTTON */
 .floatright form {
 	position: relative !important;
-    bottom: 440px !important;
+    bottom: 400px !important;
 	background: transparent !important;
 	z-index: 20 !important;
 }
@@ -538,6 +569,8 @@ h1 {
 		width: 152% !important;
 	}
 }
+
+
 
 
 

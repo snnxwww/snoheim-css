@@ -260,11 +260,7 @@ button.navbar-toggle:hover {
   border: none !important; 
 }
 button.navbar-toggle .icon-bar {
-  background-color: #fff;
   transition: 0.3s !important;
-}
-button.navbar-toggle:hover .icon-bar {
-  background-color: #ffcc00;
 }
 
 /* MAIN PANEL */
@@ -296,22 +292,22 @@ button.navbar-toggle:hover .icon-bar {
 	z-index: 25 !important;
 }
 .alert + .alert {
-	transform: translateY(25px);
+	transform: translateY(25px) !important;
 }
 .alert + .alert + .alert {
-	transform: translateY(50px);
+	transform: translateY(50px) !important;
 }
 .alert + .alert + .alert + .alert {
-	transform: translateY(75px);
+	transform: translateY(75px) !important;
 }
 .alert + .alert + .alert + .alert + .alert {
-	transform: translateY(100px);
+	transform: translateY(100px) !important;
 }
 .alert + .alert + .alert + .alert + .alert + .alert {
-	transform: translateY(125px);
+	transform: translateY(125px) !important;
 }
 .alert + .alert + .alert + .alert + .alert + .alert + .alert {
-	transform: translateY(150px);
+	transform: translateY(150px) !important;
 }
 
 
@@ -381,11 +377,11 @@ h1 {
 }
 .floatright form::before {
 	content: "Bookmark ⟶";
-	position: absolute;
-	transform: translate(0%, 20%);
+	position: absolute !important;
+	transform: translate(0%, 20%) !important;
 	font-size: var(--feat-fontsize) !important;
 	font-family: var(--feat-font) !important;
-	pointer-events: none; 
+	pointer-events: none !important; 
 	transition: 0.5s !important; 
 	}
 .floatright form:hover::before {
@@ -414,7 +410,7 @@ h1 {
     z-index: 10 !important;
 }
 #about.table tbody tr.right>td:first-child {
- display: none;
+ display: none !important;
 }
 .table .top {
 	background-color: transparent !important;
@@ -608,11 +604,11 @@ h1 {
 		background-color: var(--nbn-linkhovclr) !important;
 	}
 		button.navbar-toggle .icon-bar {
-		background-color: var(--nbn-linkclr);
+		background-color: var(--nbn-linkclr) !important;
 		transition: 0.3s !important;
 	}
 	button.navbar-toggle:hover .icon-bar {
-		background-color: var(--nbn-linkhovclr);
+		background-color: var(--nbn-linkhovclr) !important;
 	}
 
 	/* MAIN PANEL */

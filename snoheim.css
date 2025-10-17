@@ -293,7 +293,7 @@ h1 {
 	} /* NAME AND TITLE */
 .top.center .xlarge.b {
 	position: absolute !important;
-	top: 45px !important; 
+	top: 60px !important; 
 	right: 5% !important;
 	z-index: 10 !important;
 	font-size: var(--feat-hdfontsize) !important;

@@ -251,7 +251,21 @@ img[src*="logo-full-2.png"] {
 	height: 120px !important;
 	content: var(--nb-logoimg);
 }
-
+button.navbar-toggle {
+  background-color: transparent !important;
+  border: none !important;    
+}
+button.navbar-toggle:hover {
+  background-color: transparent !important; 
+  border: none !important; 
+}
+button.navbar-toggle .icon-bar {
+  background-color: #fff;
+  transition: 0.3s !important;
+}
+button.navbar-toggle:hover .icon-bar {
+  background-color: #ffcc00;
+}
 
 /* MAIN PANEL */
 .col-md-9 {
@@ -627,6 +641,13 @@ h1 {
 	.navbar a:not(:has(img[src*="logo-full-2.png"]))::before {
 		background-color: var(--nbd-linkhovclr) !important;
 	}
+	button.navbar-toggle .icon-bar {
+		background-color: var(--nbd-linkclr);
+		transition: 0.3s !important;
+	}
+	button.navbar-toggle:hover .icon-bar {
+		background-color: var(--nbd-linkhovclr);
+	}
 
 	/* MAIN PANEL */
 	.col-md-9 {
@@ -752,6 +773,13 @@ h1 {
 	}
 	.navbar a:not(:has(img[src*="logo-full-2.png"]))::before {
 		background-color: var(--nbn-linkhovclr) !important;
+	}
+		button.navbar-toggle .icon-bar {
+		background-color: var(--nbn-linkclr);
+		transition: 0.3s !important;
+	}
+	button.navbar-toggle:hover .icon-bar {
+		background-color: var(--nbn-linkhovclr);
 	}
 
 	/* MAIN PANEL */

@@ -278,7 +278,6 @@ h1 {
 	height: 600px !important;
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
-	margin: 0px !important;
 }
 .breadcrumb li::before{
 	content: none !important;

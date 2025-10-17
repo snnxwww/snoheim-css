@@ -116,6 +116,11 @@
 	--featn-fontclr: #6e92a3;
 }
 
+* {
+	box-shadow: none !important;
+	border: none !important;
+}
+
 /* BACKGROUND */
 body {
 	background-repeat: no-repeat !important;
@@ -352,9 +357,15 @@ h1 {
 	padding-top: 25px !important;
 	overflow-x: hidden !important;
 }
+.lion-image-block[data-image-type="headshot"] {
+	display: none !important;
+}
+.top.center {
+	background: transparent !important;
+}
 
 
-	
+/* DAY SETTINGS */	
 *:has(img[alt="day Time"]) {
 	/* BACKGROUND */
 	body {
@@ -457,6 +468,7 @@ h1 {
 }
 
 
+/* NIGHT SETTINGS */
 *:has(img[alt="night Time"]) {
 	/* BACKGROUND */
 	body {

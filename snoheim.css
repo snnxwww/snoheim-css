@@ -113,6 +113,8 @@
 	--featd-fontclr: #dae6e8;
 	--featd-linkclr: #f1fdff;
 	--featd-linkhovclr: #c8dcdf;
+	--featd-tblinkclr: #6f9095;
+	--featd-tblinkhovclr: #66888d;
 	
 	/* FEATURE LION / NIGHT */
 	--featn-bgimg: url('https://github.com/snnxwww/snoheim-css/blob/main/frozenvallynight.png?raw=true');
@@ -122,6 +124,8 @@
 	--featn-fontclr: #6e92a3;
 	--featn-linkclr: #314b57;
 	--featn-linkhovclr: #60899c;
+	--featn-tblinkclr: #9ab9c7;
+	--featn-tblinkhovclr: #b1cdda;
 }
 
 * {
@@ -420,6 +424,15 @@ h1 {
   top: 555px !important;
   border: none !important;
 }
+.table .bottom {
+	background-color: transparent !important;
+	position: relative !important;
+	top: -265px !important;
+}
+.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+	text-decoration: none !important;
+	transition: 0.5s !important;
+}
 
 
 
@@ -545,6 +558,13 @@ h1 {
 	}
 	#about td.right a:hover {
 		color: var(--featd-linkhovclr) !important;
+	}
+	.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+		color: var(--featd-tblinkclr);
+	}
+	.table .bottom a:hover {
+		color: var(--featd-tblinkhovclr);
+		text-shadow: 0px 0px 2px var(--featd-tblinkclr) !important;
 	}
 }
 
@@ -673,6 +693,13 @@ h1 {
 	}
 	#about td.right a:hover {
 		color: var(--featn-linkhovclr) !important;
+	}
+	.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+		color: var(--featn-tblinkclr);
+	}
+	.table .bottom a:hover {
+		color: var(--featn-tblinkhovclr);
+		text-shadow: 0px 0px 2px var(--featn-tblinkclr) !important;
 	}
 }
 

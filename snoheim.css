@@ -9,7 +9,6 @@
 
 	/* TOPBAR */
 	--tb-font: "Moon Dance";
-	--tb-fontfam: serif;
 	--tb-fontsize: 16px;
 	--tb-sbicon: url('https://github.com/snnxwww/snoheim-css/blob/main/iceshard.png?raw=true');
 	--tb-gbicon: url('https://github.com/snnxwww/snoheim-css/blob/main/snowshard.png?raw=true');
@@ -38,7 +37,6 @@
 
 	/* NAVBAR */
 	--nb-font: "Jim Nightshade";
-	--nb-fontfam: serif;
 	--nb-fontsize: 24px;
 	--nb-logoimg: url('');
 
@@ -56,7 +54,6 @@
 
 	/* MAIN PANEL */
 	--mn-font: "";
-	--mn-fontfam: serif;
 	--mn-fontsize: 16px;
 
 	/* MAIN PANEL / DAY SETTINGS */
@@ -69,7 +66,6 @@
 
 	/* SIDE PANEL */
 	--sd-font: "";
-	--sd-fontfam: serif;
 	--sd-fontsize: 16px;
 	
 	/* SIDE PANEL / DAY SETTINGS */
@@ -82,7 +78,6 @@
 
 	/* ALERTS */
 	--alrt-font: "";
-	--alrt-fontfam: serif;
 	--alrt-fontsize: 10px;
 	
 	/* ALERTS / DAY SETTINGS */
@@ -126,12 +121,37 @@
 	--featn-linkhovclr: #60899c;
 	--featn-tblinkclr: #9ab9c7;
 	--featn-tblinkhovclr: #b1cdda;
+
+	/* PLAYER CARD */
+	--pc-hdfont: "Whisper"
+	--pc-font: "Moon Dance";
+	--pc-hdfontsize: 24px;
+	--pc-fontsize: 18px;
+	
+	/* PLAYER CARD / DAY */
+	--pcd-hdfontclr: #5f7e82;
+	--pcd-fontclr: #708b8f;
+	--pcd-lineclr: #b3cace;
+	--pcd-onclr: #adc3c7;
+	--pcd-offclr: #76878a;
+	
+	/* PLAYER CARD / NIGHT */
+	--pcn-hdfontclr: #adcad7;
+	--pcn-fontclr: #94b9c9;
+	--pcn-lineclr: #6c8a98;
+	--pcn-onclr: #a4c7d7;
+	--pcn-offclr: #78939f;
+	
 }
+
+
+
 
 * {
 	box-shadow: none !important;
 	border: none !important;
 }
+
 
 /* BACKGROUND */
 body {
@@ -145,7 +165,7 @@ body {
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	height: 35px !important;
-	font-family: var(--tb-font), var(--tb-fontfam) !important;
+	font-family: var(--tb-font) !important;
 	font-size: var(--tb-fontsize) !important;
 }
 .topbar a {
@@ -171,6 +191,7 @@ img[src*="icon-beetle-gold.png"] {
 .welcomeback a {
 	font-size: var(--tb-fontsize) !important;
 }
+
 
 /* MESSAGE NOTIFICATION ANIMATION */
 @keyframes shake {
@@ -216,7 +237,7 @@ img[src*="icon-beetle-gold.png"] {
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	padding: 0px !important;
-	font-family: var(--nb-font), var(--nb-fontfam) !important;
+	font-family: var(--nb-font) !important;
 }
 .navbar a {
 	font-size: var(--nb-fontsize) !important;
@@ -267,6 +288,7 @@ button.navbar-toggle .icon-bar {
   transition: 0.3s !important;
 }
 
+
 /* MAIN PANEL */
 .col-md-9 {
 	background-repeat: no-repeat !important;
@@ -283,7 +305,7 @@ button.navbar-toggle .icon-bar {
 
 /* ALERTS */
 .alert {
-	font-family: var(--alrt-font), var(--alrt-fontfam) !important;
+	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
 	border: none !important;
 	position: absolute !important;
@@ -313,8 +335,6 @@ button.navbar-toggle .icon-bar {
 .alert + .alert + .alert + .alert + .alert + .alert + .alert {
 	transform: translateY(150px) !important;
 }
-
-
 .alert a {
 	transition: 0.5s !important;
 	display: inline-block !important;
@@ -435,6 +455,84 @@ h1 {
 }
 
 
+/* PLAYER CARD */
+#player {
+	position: absolute !important;
+	top: 820px !important;
+	border: none !important;
+	left: 3% !important;
+	width: 95% !important;
+}
+#player.table .top {
+	display: none !important;
+}
+#player.table .inner-table {
+	display: none !important;
+}
+#player a img {
+	display: none;
+}
+#player .center.h3 {
+	padding-bottom: 20px;
+	margin-bottom: -20px;
+	font-family: var(--pc-hdfont) !important;
+	font-size: var(--pc-hdfontsize) !important;
+} /* ACTIVITY STATUS */
+.member-online {
+	background-color: transparent !important;
+}
+.member-online::before {
+    content: "[ONLINE]" !important;
+	font-size: calc(var(--pc-hdfontsize)*0.6) !important;
+    margin-left: -85px !important; 
+	padding-right: 10px !important;
+}
+.member-online::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    border-radius: 50%; 
+    margin-right: 0px !important;
+}
+.member-online {
+	background-color: transparent !important;
+}
+.member-online::before {
+    content: "[OFFLINE]" !important;
+	font-size: calc(var(--pc-hdfontsize)*0.6) !important;
+    margin-left: -85px !important; 
+	padding-right: 10px !important;
+}
+.member-online::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    border-radius: 50%; 
+    margin-right: 0px !important;
+} /* PLAYER OPTIONS */
+#player span {
+	color: transparent;
+}
+#player span:after {
+	content: "|";
+	margin-left: -17.5px;
+	font-size: calc(var(--pc-fontsize)*1.4)
+}
+#player a {
+	font-size: var(--pc-fontsize)
+}
+
+
+
+
+#commentBox, #makeComment {
+	position: relative !important;
+	top: 340px;
+}
+
+
 
 
 /* DAY SETTINGS */	
@@ -478,7 +576,7 @@ h1 {
 	.navbar {
 		background-color: var(--nbd-bgclr) !important;
 		background-image: var(--nbd-bgimg) !important;
-		font-family: var(--nb-font), var(--nb-fontfam) !important;
+		font-family: var(--nb-font) !important;
 	}
 	.navbar a {
 		color: var(--nbd-linkclr) !important;
@@ -566,6 +664,24 @@ h1 {
 		color: var(--featd-tblinkhovclr);
 		text-shadow: 0px 0px 2px var(--featd-tblinkclr) !important;
 	}
+
+	/* PLAYER CARD */
+	#player .center.h3 {
+		border-bottom: 4px solid var(--pcd-lineclr) !important;
+		color: var(--pcd-hdfontclr);
+	} /* ACTIVITY STATUS */
+	.member-online::before {
+	    color: var(--pcd-fontclr) !important;
+	}
+	.member-online::after {
+	    background-color: var(--pcd-onclr) !important; 
+	} /* CARD LINKS */
+	#player span:after {
+		color: var(--pcd-fontclr) !important;
+	}
+	#player a {
+		color: var(--pcd-fontclr) !important;
+	}
 }
 
 
@@ -612,7 +728,7 @@ h1 {
 	.navbar {
 		background-color: var(--nbn-bgclr) !important;
 		background-image: var(--nbn-bgimg) !important;
-		font-family: var(--nb-font), var(--nb-fontfam) !important;
+		font-family: var(--nb-font) !important;
 	}
 	.navbar a {
 		color: var(--nbn-linkclr) !important;
@@ -700,6 +816,24 @@ h1 {
 	.table .bottom a:hover {
 		color: var(--featn-tblinkhovclr);
 		text-shadow: 0px 0px 2px var(--featn-tblinkclr) !important;
+	}
+
+	/* PLAYER CARD */
+	#player .center.h3 {
+		border-bottom: 4px solid var(--pcn-lineclr) !important;
+		color: var(--pcn-hdfontclr);
+	} /* ACTIVITY STATUS */
+	.member-online::before {
+	    color: var(--pcn-fontclr) !important;
+	}
+	.member-online::after {
+	    background-color: var(--pcn-onclr) !important; 
+	} /* CARD LINKS */
+	#player span:after {
+		color: var(--pcn-fontclr) !important;
+	}
+	#player a {
+		color: var(--pcn-fontclr) !important;
 	}
 }
 

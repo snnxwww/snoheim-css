@@ -570,7 +570,7 @@ h1 {
 	padding: 0px !important;
 	height: 900px !important;
 	position: relative !important;
-	top: 87.5px !important;
+	top: 132.4px !important;
 	width: 95%;
 }
 .player-card {
@@ -627,7 +627,7 @@ h1 {
 
 #commentBox, #makeComment {
 	position: relative !important;
-	top: -220px;
+	top: -135px;
 	width: 70%;
 	left: 12.5%;
 	height: 210px !important;

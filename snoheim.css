@@ -308,34 +308,19 @@ button.navbar-toggle .icon-bar {
 	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
 	border: none !important;
-	position: absolute !important;
-	top: 0.2% !important;
+	position: relative !important;
+	top: -610px !important;
 	left: 10px !important;
-	width: 70% !important;
-	margin: 0 !important;
+	width: 69% !important;
+	margin-bottom: 2.5px !important;
 	padding: 4px !important;
 	padding-left: 10px !important;
 	z-index: 25 !important;
 	text-align: left !important;
 	border-radius: 0px !important;
 }
-.alert + .alert {
-	transform: translateY(25px) !important;
-}
-.alert + .alert + .alert {
-	transform: translateY(50px) !important;
-}
-.alert + .alert + .alert + .alert {
-	transform: translateY(75px) !important;
-}
-.alert + .alert + .alert + .alert + .alert {
-	transform: translateY(020px) !important;
-}
-.alert + .alert + .alert + .alert + .alert + .alert {
-	transform: translateY(125px) !important;
-}
-.alert + .alert + .alert + .alert + .alert + .alert + .alert {
-	transform: translateY(150px) !important;
+#pageContainer br {
+    display: none !important; 
 }
 .alert a {
 	transition: 0.5s !important;
@@ -344,86 +329,23 @@ button.navbar-toggle .icon-bar {
 .alert a:hover {
 	transform: translateX(4px) !important;
 }
-
 center .alert {
 	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
 	border: none !important;
-	position: absolute !important;
-	left: 72.25% !important;
-	width: 26.5% !important;
-	margin: 0 !important;
+	position: relative !important;
+	left: 35% !important;
+	top: -680px !important;
+	width: 27.5% !important;
+	margin-bottom: 2.5px !important;
 	padding: 4px !important;
 	padding-left: 10px !important;
 	z-index: 25 !important;
-	text-align: center !important;
+	text-align: left !important;
+	border-radius: 0px !important;
 }
-@media (min-width: 1200px) {
-	center .alert {
-		top: 0.2% !important;
-	}
-	center .alert + .alert {
-		transform: translateY(42.5px) !important;
-	}
-	center .alert + .alert + .alert {
-		transform: translateY(84.95px) !important;
-	}
-}
-@media (max-width: 1200px) {
-	center .alert {
-		top: 0.2% !important;
-	}
-	center .alert + .alert {
-		transform: translateY(41.85px) !important;
-	}
-	center .alert + .alert + .alert {
-		transform: translateY(98.1px) !important;
-	}
-}
-@media (max-width: 992px) {
-	center .alert {
-		top: 0.2% !important;
-	}
-	center .alert + .alert {
-		transform: translateY(42.75px) !important;
-	}
-	center .alert + .alert + .alert {
-		transform: translateY(99.4px) !important;
-	}
-}
-@media (max-width: 693px) {
-	center .alert {
-		top: 0.2% !important;
-	}
-	center .alert + .alert {
-		transform: translateY(56.45px) !important;
-	}
-	center .alert + .alert + .alert {
-		transform: translateY(112.9px) !important;
-	}
-}
-@media (max-width: 624px) {
-	center .alert {
-		top: 0.2% !important;
-	}
-	center .alert + .alert {
-		transform: translateY(57px) !important;
-	}
-	center .alert + .alert + .alert {
-		transform: translateY(128px) !important;
-	}
-}
-@media (max-width: 614px) {
-	center .alert {
-		top: 0.2% !important;
-	}
-	center .alert + .alert {
-		transform: translateY(56.5px) !important;
-	}
-	center .alert + .alert + .alert {
-		transform: translateY(127px) !important;
-	}
-}
+
+
 
 
 /* FEATURE LION */

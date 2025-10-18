@@ -108,8 +108,8 @@
 	--featd-fontclr: #dae6e8;
 	--featd-linkclr: #f1fdff;
 	--featd-linkhovclr: #c8dcdf;
-	--featd-tblinkclr: #6f9095;
-	--featd-tblinkhovclr: #66888d;
+	--featd-tblinkclr: #6f8a8f;
+	--featd-tblinkhovclr: #5a757a;
 	
 	/* FEATURE LION / NIGHT */
 	--featn-bgimg: url('https://github.com/snnxwww/snoheim-css/blob/main/frozenvallynight.png?raw=true');
@@ -119,7 +119,7 @@
 	--featn-fontclr: #6e92a3;
 	--featn-linkclr: #314b57;
 	--featn-linkhovclr: #60899c;
-	--featn-tblinkclr: #9ab9c7;
+	--featn-tblinkclr: #b8c5cb;
 	--featn-tblinkhovclr: #b1cdda;
 
 	/* PLAYER CARD */
@@ -346,8 +346,6 @@ center .alert {
 }
 
 
-
-
 /* FEATURE LION */
 h1 {
 	display: none !important;
@@ -451,7 +449,22 @@ h1 {
 .table .bottom {
 	background-color: transparent !important;
 	position: relative !important;
-	top: -265px !important;
+	top: -270px !important;
+}
+@media (min-width: 1200px) {
+	.table .bottom {
+		top: -250px !important;
+	}
+}
+@media (max-width: 992px) {
+	.table .bottom {
+		top: -250px !important;
+	}
+}
+@media (max-width: 769px) {
+	.table .bottom {
+		top: -270px !important;
+	}
 }
 .table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
 	text-decoration: none !important;

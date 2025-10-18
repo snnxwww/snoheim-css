@@ -316,6 +316,7 @@ button.navbar-toggle .icon-bar {
 	padding: 4px !important;
 	padding-left: 10px !important;
 	z-index: 25 !important;
+	text-align: left !important;
 }
 .alert + .alert {
 	transform: translateY(25px) !important;

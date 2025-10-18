@@ -332,24 +332,44 @@ button.navbar-toggle .icon-bar {
 center .alert {
 	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
+	position: relative;
+	top: -1085px !important;
 	border: none !important;
-	position: absolute !important;
-	left: 71% !important;
-	top: -0.7% !important;
-	margin-top: 0px !important;
-	width: 27.5% !important;
-	margin-bottom: 2.5px !important;
 	padding: 4px !important;
 	padding-left: 10px !important;
 	z-index: 25 !important;
 	text-align: left !important;
 	border-radius: 0px !important;
-}
-center .alert:nth-child(3) {
-	transform: translateY(100%) !important;
+	width: 90% !important;
+	height: 24px !important;
 }
 center .alert:nth-child(4) {
-	transform: translateY(200%) !important;
+	transform: translateY(-220%) !important;
+}
+center .alert:nth-child(5) {
+	transform: translateY(-440%) !important;
+}
+@media (min-width: 1200px) {
+	center .alert {
+	font-family: var(--alrt-font) !important;
+	font-size: var(--alrt-fontsize) !important;
+	position: relative;
+	top: -1070px !important;
+	border: none !important;
+	padding: 4px !important;
+	padding-left: 10px !important;
+	z-index: 25 !important;
+	text-align: left !important;
+	border-radius: 0px !important;
+	width: 90% !important;
+	height: 24px !important;
+}
+center .alert:nth-child(4) {
+	transform: translateY(-220%) !important;
+}
+center .alert:nth-child(5) {
+	transform: translateY(-440%) !important;
+}
 }
 
 
@@ -456,21 +476,26 @@ h1 {
 .table .bottom {
 	background-color: transparent !important;
 	position: relative !important;
-	top: -270px !important;
+	top: -267.5px !important;
 }
 @media (min-width: 1200px) {
 	.table .bottom {
-		top: -250px !important;
+		top: -260px !important;
 	}
 }
 @media (max-width: 992px) {
 	.table .bottom {
-		top: -250px !important;
+		top: -260px !important;
 	}
 }
 @media (max-width: 769px) {
 	.table .bottom {
-		top: -270px !important;
+		top: -260px !important;
+	}
+}
+@media (max-width: 749px) {
+	.table .bottom {
+		top: -267.5px !important;
 	}
 }
 .table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
@@ -494,7 +519,7 @@ h1 {
 #player.table .top .floatright {
 	position: relative;
 	top: 52px !important;
-	left: -42.5% !important;
+	left: -350px !important;
 	margin: -15px;
 	font-size: calc(var(--pc-hdfontsize)*0.8)
 }
@@ -570,13 +595,8 @@ h1 {
 	padding: 0px !important;
 	height: 900px !important;
 	position: relative !important;
-	top: 120px !important;
+	top: 132.4px !important;
 	width: 95%;
-}
-@media (min-width: 1200px) {
-	.two-section-table {
-	top: 133px !important;
-	}
 }
 .player-card {
   background-color: #e0e0e040;

@@ -819,7 +819,6 @@ h1 {
 	    font-size: var(--feat-fontsize) !important;
 	    color: var(--featn-fontclr) !important;
 	    font-family: var(--feat-font) !important;   
-	} 
 	}
 	/* INFO TABLE */
 	.inner-table td.right {

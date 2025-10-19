@@ -707,6 +707,9 @@ h1 {
 			top: -1070px !important;
 		}
 	}
+	#commentBox, #makeComment {
+		top: -185px !important;
+	}
 }
 
 

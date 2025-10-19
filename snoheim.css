@@ -126,7 +126,7 @@
 	--pc-hdfont: "Whisper"
 	--pc-font: "Moon Dance";
 	--pc-hdfontsize: 24px;
-	--pc-fontsize: 18px;
+	--pc-fontsize: 15px;
 	
 	/* PLAYER CARD / DAY */
 	--pcd-hdfontclr: #5f7e82;
@@ -333,7 +333,7 @@ center .alert {
 	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
 	position: relative;
-	top: -1085px !important;
+	top: -105px !important;
 	border: none !important;
 	padding: 4px !important;
 	padding-left: 10px !important;
@@ -354,7 +354,7 @@ center .alert:nth-child(5) {
 	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
 	position: relative;
-	top: -1070px !important;
+	top: -1085px !important;
 	border: none !important;
 	padding: 4px !important;
 	padding-left: 10px !important;
@@ -518,8 +518,8 @@ h1 {
 }
 #player.table .top .floatright {
 	position: relative;
-	top: 52px !important;
-	left: -350px !important;
+	top: 42px !important;
+	left: -45% !important;
 	margin: -15px;
 	font-size: calc(var(--pc-hdfontsize)*0.8)
 }
@@ -530,8 +530,9 @@ h1 {
 	display: none;
 }
 #player .center.h3 {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	margin-bottom: -20px;
+	margin-top: 10px;
 	font-family: var(--pc-hdfont) !important;
 	font-size: var(--pc-hdfontsize) !important;
 } /* ACTIVITY STATUS */
@@ -573,17 +574,142 @@ h1 {
 	color: transparent;
 }
 #player span:after {
-	content: "|";
+	content: ": :";
 	margin-left: -17.5px !important;
 	font-size: var(--pc-fontsize) !important;
-	margin-bottom: -10px !important;
 }
 #player a {
 	font-size: var(--pc-fontsize) !important;
 }
 #player .xlarge {
-	margin: -10px !important;
+	margin: -12.4px !important;
 }
+#player .right_odd {
+	display: block !important;
+	background: transparent !important;
+	margin-top: -45px !important;
+}
+#player .right_odd.text-right {
+	display: block !important;
+	margin-top: -40px !important;
+	margin-right: 0px !important;
+}
+.xlarge a {
+    position: relative;
+    color: transparent !important;
+}
+.center a {
+	position: relative;
+	color: transparent !important;
+}
+.center a:after {
+	font-size: var(--pc-fontsize !important);
+}
+.right_odd a {
+	position: relative;
+	color: transparent !important;
+}
+
+/* MESSAGE */
+.xlarge a[href^="/compose.php"]::after {
+    content: "Leave a Whisper";
+    margin-left: -65px !important;
+	transition: 0.5s !important;
+}
+.xlarge a[href^="/compose.php"]:hover:after {
+    margin-left: -60px !important;
+	margin: 5px;
+} /* SEND GIFT */
+.xlarge a[href^="/transfers.php"]::after {
+    content: "Send a Parcel";
+    margin-left: -70px !important;
+	transition: 0.5s !important;
+}
+.xlarge a[href^="/transfers.php"]:hover:after {
+    margin-left: -65px !important;
+	margin: 5px;
+} /* CREATE TRADE*/
+.xlarge a[href^="/trading_center.php?p=create"]::after {
+    content: "Propose a Deal";
+    margin-left: -95px !important;
+	transition: 0.5s !important;
+}
+.xlarge a[href^="/trading_center.php?p=create"]:hover:after {
+    margin-left: -90px !important;
+	margin: 5px;
+} /* WISHLIST */
+.center a[href^="/wishlist.php"]::after {
+    content: "View Bounties";
+    margin-left: -95px !important;
+	transition: 0.5s !important;
+}
+.center a[href^="/wishlist.php"]:hover:after {
+    margin-left: -90px !important;
+	margin: 5px;
+} /* VIEW TRADES */
+.center a[href^="/trading_center.php?s=users"]::after {
+    content: "View Listings";
+    margin-left: -90px !important;
+	transition: 0.5s !important;
+}
+.center a[href^="/trading_center.php?s=users"]:hover:after {
+    margin-left: -85px !important;
+	margin: 5px;
+} /* BLOCK MEMBER */
+.right_odd a[href^="/allies.php?p=blocked"]::after {
+    content: "Banish";
+    margin-left: -110px !important; 
+	transition: 0.5s !important;
+}
+.right_odd a[href^="/allies.php?p=blocked"]:hover:after {
+	font-size: calc(var(--pc-fontsize)*1.025);
+} /* FRIEND REQUEST */
+.right_odd a[href^="/territory.php"]::after {
+    content: "Offer an Alliance";
+    margin-left: -110px;
+	transition: 0.5s !important;
+}
+.right_odd a[href^="/territory.php"]:hover::after {
+    font-size: calc(var(--pc-fontsize)*1.025);
+}
+
+/* PERSONAL STYLING */
+*:has(a[href*="refer.php"]) {
+	#player .center.h3 {
+		margin-top: 30px;
+	}
+	#player.table .top .floatright {
+		top: 62px !important;
+	} /* WISHLIST */
+	.center a[href^="/wishlist.php"]::after {
+	    content: "View Bounties";
+	    margin-left: -125px !important;
+		transition: 0.5s !important;
+	}
+	.center a[href^="/wishlist.php"]:hover:after {
+	    margin-left: -120px !important;
+		margin: 5px;
+	} /* REFER A FRIEND */
+	.center a[href^="/refer.php"]::after {
+	    content: "Recruit an Ally";
+	    margin-left: -110px !important;
+		transition: 0.5s !important;
+	}
+	.center a[href^="/refer.php"]:hover:after {
+	    margin-left: -105px !important;
+		margin: 5px;
+	}
+	.two-section-table {
+		top: 135px !important;
+	}
+	@media (min-width: 1200px) {
+		center .alert {
+			top: -1070px !important;
+		}
+	}
+}
+
+
 
 
 .two-section-table br {
@@ -595,11 +721,11 @@ h1 {
 	padding: 0px !important;
 	height: 900px !important;
 	position: relative !important;
-	top: 132.4px !important;
+	top: 120px !important;
 	width: 95%;
 }
 .player-card {
-  background-color: #e0e0e040;
+  background-color: #e0e0e0;
   padding: 10px;
   overflow-y: auto;
   height: 200px;
@@ -652,7 +778,7 @@ h1 {
 
 #commentBox, #makeComment {
 	position: relative !important;
-	top: -135px;
+	top: -172.5px;
 	width: 70%;
 	left: 12.5%;
 	height: 210px !important;
@@ -814,7 +940,7 @@ h1 {
 	#player span:after {
 		color: var(--pcd-fontclr) !important;
 	}
-	#player a {
+	#player a:after {
 		color: var(--pcd-fontclr) !important;
 	}
 }
@@ -977,7 +1103,7 @@ h1 {
 	#player span:after {
 		color: var(--pcn-fontclr) !important;
 	}
-	#player a {
+	#player a:after {
 		color: var(--pcn-fontclr) !important;
 	}
 }

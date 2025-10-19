@@ -598,12 +598,12 @@ h1 {
     position: relative;
     color: transparent !important;
 }
-.center a {
+ #player .center a {
 	position: relative;
 	color: transparent !important;
 }
 .center a:after {
-	font-size: var(--pc-fontsize !important);
+	font-size: var(--pc-fontsize) !important;
 }
 .right_odd a {
 	position: relative;

@@ -772,13 +772,13 @@ h1 {
 	position: absolute !important;
 	top: 1682.5px !important;
 	width: 70%;
-	left: 12.5%;
+	left: 27.5% !important;
 	height: 210px !important;
 	left: 240px;
 }
 #fraOrganizationBlock {
 	position: relative !important;
-	top: 1000px !important;
+	top: 1120px !important;
 }
 #sparring {
 	position: relative !important;
@@ -811,6 +811,30 @@ b {
 table b { /* keep info table format */
 	top: 0px;
 }
+
+/* CAVE */
+#fraCaveList {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px 0; 
+}
+
+#fraCaveList > div.col-md-4.col-xs-6.center {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: center; /* or start/end */
+    margin: 0 10px;
+}
+
 
 /* DAY SETTINGS */	
 *:has(img[alt="day Time"]) {

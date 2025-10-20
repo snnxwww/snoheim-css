@@ -776,10 +776,6 @@ h1 {
 	height: 210px !important;
 	left: 240px;
 }
-#fraOrganizationBlock {
-	position: relative !important;
-	top: 1120px !important;
-}
 #sparring {
 	position: relative !important;
 	top: 2000px;
@@ -812,7 +808,12 @@ table b { /* keep info table format */
 	top: 0px;
 }
 
-/* CAVE */
+/* CAVES */
+#fraOrganizationBlock {
+	position: absolute !important;
+	top: 1750px !important;
+	width: 100%;
+}
 #fraCaveList {
     display: flex;
     flex-wrap: nowrap;
@@ -824,16 +825,52 @@ table b { /* keep info table format */
     }
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    width: 100%;
+    width: 95%;
     padding: 10px 0; 
 }
 
 #fraCaveList > div.col-md-4.col-xs-6.center {
     flex: 0 0 auto;
     width: 300px;
-    scroll-snap-align: center; /* or start/end */
+    scroll-snap-align: center;
     margin: 0 10px;
 }
+
+#fraCaveList > div:nth-child(1) {
+	order: 7; 
+}
+#fraCaveList > div:nth-child(2) {
+	order: 4; 
+}
+#fraCaveList > div:nth-child(3) {
+	order: 2; 
+}
+#fraCaveList > div:nth-child(4) {
+	order: 1; 
+}
+#fraCaveList > div:nth-child(5) {
+	order: 3; 
+}
+#fraCaveList > div:nth-child(6) {
+	order: 6; 
+}
+#fraCaveList > div:nth-child(7) {
+	order: 5; 
+}
+#fraCaveList > div:nth-child(8) {
+	order: 9; 
+}
+#fraCaveList > div:nth-child(9) {
+	order: 8; 
+}
+
+#fraCaveList {
+	padding-left: 200px !important;
+	padding-right: 200px !important
+}
+
+
+
 
 
 /* DAY SETTINGS */	

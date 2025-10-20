@@ -837,6 +837,9 @@ center b {
 	background: #ffffff;
 	z-index: 10;
 	width: 100%;
+	padding-left: 0px !important;
+	padding-right: 32.5px !important;
+	height: 160px !important;
 }
 
 #fraCaveList > div:nth-child(1) {
@@ -874,11 +877,12 @@ center b {
 
 #fraMoundList .mound-grid {
 	position: relative;
-	height: 100px;
+	height: 110px;
 	top: -140px;
 	z-index: 0;
 	width: 85%;
 	padding: 0;
+	left: 20px;
 }
 #fraMoundList .col-md-3:nth-child(2) {
 	display: none;

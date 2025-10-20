@@ -700,9 +700,6 @@ h1 {
 	    margin-left: -105px !important;
 		margin: 5px;
 	}
-	#commentBox, #makeComment {
-		top: -185px !important;
-	}
 }
 
 
@@ -773,14 +770,42 @@ br {
   overflow-y: auto;
 }
 
-#commentBox, #makeComment {
-	position: relative !important;
-	top: -172.5px;
+#commentBox {
+	position: absolute !important;
+	top: 1475px !important;
 	width: 70%;
 	left: 12.5%;
 	height: 210px !important;
+	left: 240px;
 }
-
+#makeComment {
+	position: absolute !important;
+	top: 1682.5px !important;
+	width: 70%;
+	left: 12.5%;
+	height: 210px !important;
+	left: 240px;
+}
+#fraOrganizationBlock {
+	position: relative !important;
+	top: 1200px !important;
+}
+#sparring {
+	position: relative !important;
+	top: 400px;
+}
+#reclaim {
+	position: relative !important;
+	top: 400px;
+}
+#attack {
+	position: relative !important;
+	top: 400px;
+}
+#allies {
+	position: relative !important;
+	top: 400px;
+}
 
 
 

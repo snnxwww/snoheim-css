@@ -763,14 +763,6 @@ h1 {
 #clans {
 	display: none;
 }
-.col-sm-6 {
-	position: relative !important;
-	top: 1340px;
-}
-b {
-	position: relative !important;
-	top: 0px;
-}
 table b { /* keep info table format */
 	top: 0px;
 }
@@ -778,34 +770,6 @@ center b {
 	top: 0px;
 }
 
-/* PERSONAL STYLING */
-*:has(a[href*="refer.php"]) {
-	/* PLAYER CARD */
-	#player .center.h3 {
-		margin-top: 30px;
-	}
-	#player.table .top .floatright {
-		top: 62px !important;*/
-	} /* WISHLIST */
-	.center a[href^="/wishlist.php"]::after {
-	    content: "View Bounties";
-	    margin-left: -125px !important;
-		transition: 0.5s !important;
-	}
-	.center a[href^="/wishlist.php"]:hover:after {
-	    margin-left: -120px !important;
-		margin: 5px;*/
-	} /* REFER A FRIEND */
-	.center a[href^="/refer.php"]::after {
-	    content: "Recruit an Ally";
-	    margin-left: -110px !important;
-		transition: 0.5s !important;
-	}
-	.center a[href^="/refer.php"]:hover:after {
-	    margin-left: -105px !important;
-		margin: 5px;
-	}
-}
 
 /* CAVES */
 #fraOrganizationBlock {
@@ -893,6 +857,115 @@ center b {
 }
 .dynastylist h3 {
 	display: none;
+}
+
+/* PERSONAL STYLING */
+*:has(a[href*="refer.php"]) {
+	/* PLAYER CARD */
+	#player .center.h3 {
+		margin-top: 30px;
+	}
+	#player.table .top .floatright {
+		top: 62px !important;*/
+	} /* WISHLIST */
+	.center a[href^="/wishlist.php"]::after {
+	    content: "View Bounties";
+	    margin-left: -125px !important;
+		transition: 0.5s !important;
+	}
+	.center a[href^="/wishlist.php"]:hover:after {
+	    margin-left: -120px !important;
+		margin: 5px;*/
+	} /* REFER A FRIEND */
+	.center a[href^="/refer.php"]::after {
+	    content: "Recruit an Ally";
+	    margin-left: -110px !important;
+		transition: 0.5s !important;
+	}
+	.center a[href^="/refer.php"]:hover:after {
+	    margin-left: -105px !important;
+		margin: 5px;
+	}
+	#sparring {
+		position: absolute !important;
+		top: 2040px;
+		width: 95%;
+		left: 2.5%
+	}
+	#reclaim {
+		position: absolute !important;
+		top: 2220px;
+		width: 95%;
+		left: 2.5%;
+	}
+	#reclaim .left {
+		display: none !important;
+	}
+	.feature:has(input[name="playall"]) {
+		position: absolute !important;
+		top: 1700px;
+		width: 87.5%;
+		left: 35px;
+	}
+	.feature:has(input[name="feedall"]) {
+		position: absolute !important;
+		top: 1700px;
+		width: 87.5%;
+		right: 35px;
+	}
+	.feature {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center; 
+	  align-items: center;
+	  height: 180px;
+	}
+
+	b {
+		position: relative !important;
+		top: 1405px;
+	}
+	.dynastycollection {
+		position: absolute !important;
+		top: 2550px;
+		width: 95%;
+		left: 3.5%;
+	}
+	.dynastylist {
+		width: 20%;
+	}
+	.dynastylist h3 {
+		display: none;
+	}
+	table b { /* keep info table format */
+		top: 0px;
+	}
+	center b {
+		top: 0px;
+	}
+	.panel b {
+		top: 0px;
+	}
+	.col-sm-4 {
+		top: 1940px;
+		width: 31.75%;
+		left: 2.5%;
+	}
+	form:has(input[name="atid"]) > div.left {
+		position: relative;
+		top: 1950px;
+		width: 95%;
+	}
+	form:has(input[name="atid"]) table.table:first-of-type {
+		position: relative;
+		top: 1950px;
+		width: 95%;
+	}
+	.col-md-9 {
+		height: 2750px;
+	}
+
+
 }
 
 

@@ -764,7 +764,7 @@ h1 {
 	position: absolute !important;
 	top: 1475px !important;
 	width: 70%;
-	left: 12.5%;
+	left: 27.5% !important;
 	height: 210px !important;
 	left: 240px;
 }
@@ -778,26 +778,39 @@ h1 {
 }
 #fraOrganizationBlock {
 	position: relative !important;
-	top: 1200px !important;
+	top: 1000px !important;
 }
 #sparring {
 	position: relative !important;
-	top: 400px;
+	top: 2000px;
 }
 #reclaim {
 	position: relative !important;
-	top: 400px;
+	top: 2000px;
 }
 #attack {
 	position: relative !important;
-	top: 400px;
+	top: 2000px;
 }
 #allies {
 	position: relative !important;
-	top: 400px;
+	top: 2000px;
 }
-
-
+#clans {
+	position: relative !important;
+	top: 2000px;
+}
+.col-sm-6 {
+	position: relative !important;
+	top: 2000px;
+}
+b {
+	position: relative !important;
+	top: 2000px;
+}
+table b { /* keep info table format */
+	top: 0px;
+}
 
 /* DAY SETTINGS */	
 *:has(img[alt="day Time"]) {

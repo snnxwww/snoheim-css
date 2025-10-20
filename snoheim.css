@@ -753,9 +753,10 @@ h1 {
 	left: 240px;
 }
 #attack {
-	position: relative !important;
-	top: 1340px;
+	position: absolute !important;
+	top: 2040px;
 	width: 95%;
+	left: 2.5%;
 }
 #allies {
 	display: none;
@@ -845,6 +846,9 @@ h1 {
 
 .dynastycollection {
 	width: 95%;
+	position: absolute;
+	left: 2.5% !important;
+	top: 2240px;
 }
 .dynastylist {
 	width: 20%;

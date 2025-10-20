@@ -763,12 +763,6 @@ h1 {
 #clans {
 	display: none;
 }
-table b { /* keep info table format */
-	top: 0px;
-}
-center b {
-	top: 0px;
-}
 
 
 /* CAVES */
@@ -920,11 +914,6 @@ center b {
 	  align-items: center;
 	  height: 180px;
 	}
-
-	b {
-		position: relative !important;
-		top: 1405px;
-	}
 	.dynastycollection {
 		position: absolute !important;
 		top: 2550px;
@@ -937,18 +926,9 @@ center b {
 	.dynastylist h3 {
 		display: none;
 	}
-	table b { /* keep info table format */
-		top: 0px;
-	}
-	center b {
-		top: 0px;
-	}
-	.panel b {
-		top: 0px;
-	}
 	.col-sm-4 {
 		top: 1940px;
-		width: 31.75%;
+		width: 31.5%;
 		left: 2.5%;
 	}
 	form:has(input[name="atid"]) > div.left {

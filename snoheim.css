@@ -319,7 +319,7 @@ button.navbar-toggle .icon-bar {
 	text-align: left !important;
 	border-radius: 0px !important;
 }
-.alert br {
+#pageContainer br {
     display: none !important; 
 }
 .alert a {
@@ -702,10 +702,6 @@ h1 {
 	}
 }
 
-
-br {
-	display: none !important;
-}
 
 
 .two-section-table {

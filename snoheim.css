@@ -332,8 +332,8 @@ button.navbar-toggle .icon-bar {
 center .alert {
 	font-family: var(--alrt-font) !important;
 	font-size: var(--alrt-fontsize) !important;
-	position: relative;
-	top: -155px !important;
+	position: absolute !important;
+	top: 525px !important;
 	border: none !important;
 	padding: 4px !important;
 	padding-left: 10px !important;
@@ -342,6 +342,17 @@ center .alert {
 	border-radius: 0px !important;
 	width: 90% !important;
 	height: 24px !important;
+	left: 5% !important;
+}
+center .alert:nth-child(4) {
+	transform: translateY(-110%) !important;
+}
+center .alert:nth-child(5) {
+	transform: translateY(-220%) !important;
+}
+@media (min-width: 1200px) {
+	center .alert {
+	top: -135px !important;
 }
 center .alert:nth-child(4) {
 	transform: translateY(-220%) !important;
@@ -349,8 +360,6 @@ center .alert:nth-child(4) {
 center .alert:nth-child(5) {
 	transform: translateY(-440%) !important;
 }
-@media (min-width: 1200px) {
-	
 }
 
 
@@ -470,7 +479,7 @@ h1 {
 }
 @media (max-width: 992px) {
 	.table .bottom {
-		top: -250px !important;
+		top: -200px !important;
 	}
 }
 @media (max-width: 769px) {
@@ -660,9 +669,6 @@ h1 {
 
 /* PERSONAL STYLING */
 *:has(a[href*="refer.php"]) {
-	center .alert {
-		top: -137.5px !important;
-	}
 	/* PLAYER CARD */
 	#player .center.h3 {
 		margin-top: 30px;

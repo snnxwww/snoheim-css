@@ -48,7 +48,7 @@
 	transition: 0.5s !important;
 }
 .col-md-9 {
-	height: 2500px !important;
+	height: 2950px !important;
 }
 
 /* TOPBAR */
@@ -679,11 +679,8 @@ h1 {
 }
 
 
-/* DELETE LATER */
-b:has(span) #sparring, #reclaim, .feature, .col-sm-4, form:has(input[name="atid"]) table.table:first-of-type, form:has(input[name="atid"]) > div.left {
-	display: none;
-}
 
+/* PRIVATE STYLES */
 *:has(a[href*="refer.php"]) {
 	#player .center.h3 {
 		margin-top: 30px !important;
@@ -708,6 +705,60 @@ b:has(span) #sparring, #reclaim, .feature, .col-sm-4, form:has(input[name="atid"
 	.center a[href^="/refer.php"]:hover:after {
 	    margin-left: -105px !important;
 		margin: 5px;
+	}
+	b:has(span)  {
+		position: absolute !important;
+	}
+	.feature {
+		position: absolute !important;
+		top: 1150px !important;
+		width: 85% !important;
+		left: 7.5% !important;
+		height: 150px !important;
+		gap: 0px !important;
+	}
+	#sparring {
+		position: absolute !important;
+		top: 2200px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	#reclaim {
+		position: absolute !important;
+		top: 2375px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	.dynastycollection {
+		position: absolute !important;
+		top: 2525px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	.col-sm-4 {
+		position: absolute !important;
+		top: 2585px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+		width: 33% !important;
+	}
+	.col-sm-4:nth-child(1) {
+		transform: translateX(92.5%);
+	}
+	.col-sm-4:nth-child(2) {
+		transform: translateX(185%);
+	}
+	form:has(input[name="atid"]) table.table:first-of-type {
+	position: absolute !important;
+	top: 2625px !important;
+	width: 95% !important;
+	left: 2.5% !important;	
+	}	
+	form:has(input[name="atid"]) > div.left {
+		position: absolute !important;
+		top: 2675px !important;
+		width: 95% !important;
+		left: 2.5% !important;
 	}
 }
 
@@ -920,10 +971,50 @@ b:has(span) #sparring, #reclaim, .feature, .col-sm-4, form:has(input[name="atid"
 	}
 }
 
-@media (max-width: 699px) {
+@media (max-width: 769px) {
 	/* SMALL SCREEN / PHONE */
 	*:has(a[href*="refer.php"]) {
-		
+		.feature {
+			top: 1150px !important;
+			width: 85% !important;
+			left: 7.5% !important;
+			height: 150px !important;
+		}
+		form:has(input[name="feedall"]) .feature {
+			top: 1300px !important;
+		}
+	
+		#sparring {
+			top: 2375px !important;
+			width: 95% !important;
+			left: 2.5% !important;
+		}
+		#reclaim {
+			top: 2550px !important;
+			width: 95% !important;
+			left: 2.5% !important;
+		}
+		.dynastycollection {
+			top: 2710px !important;
+			width: 95% !important;
+			left: 2.5% !important;
+		}
+		.col-sm-4 {
+			top: 2775px !important;
+			width: 95% !important;
+			left: 2.5% !important;
+			width: 33% !important;
+		}
+		form:has(input[name="atid"]) table.table:first-of-type {
+			top: 2825px !important;
+			width: 95% !important;
+			left: 2.5% !important;	
+		}	
+		form:has(input[name="atid"]) > div.left {
+			top: 2875px !important;
+			width: 95% !important;
+			left: 2.5% !important;
+		}
 	}
 }
 

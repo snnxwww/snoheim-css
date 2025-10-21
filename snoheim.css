@@ -153,9 +153,6 @@ button.navbar-toggle:hover {
 	text-align: left !important;
 	border-radius: 0px !important;
 }
-.alert:nth-child(6) {
-	transform: translateY(-80%) !important;
- }
 .alert:nth-child(7) {
 	transform: translateY(-80%) !important;
  }
@@ -549,7 +546,6 @@ h1 {
     flex: 0 0 auto !important;
     scroll-snap-align: center !important;
 	z-index: 10 !important;
-	width: 100% !important;
 	height: 160px !important;
 }
 #fraCaveList > div:nth-child(1) {
@@ -627,19 +623,14 @@ h1 {
 #fraMoundList .mound-grid {
 	position: relative !important;
 	height: 100px !important;
-	top: -150px !important;
 	z-index: 0 !important;
 	width: 100% !important;
 	padding: 0 !important;
-	left: 595px; !important;
 	line-height: 12.5px !important;
+	right: 5% !important;
 }
 #fraMoundList .mound-grid:hover {
 	font-size: calc(var(--caves-fontsize)*1.05) !important;
-}
-#fraMoundList .mound-grid img {
-	width: 180px !important;
-	height: 80px !important;
 }
 #fraMoundList .col-md-3:nth-child(2) {
 	display: none !important;
@@ -699,6 +690,29 @@ b:has(span), #attack, #sparring, #reclaim, .feature, #clans, .dynastycollection,
 	.table .bottom {
 		top: -275px !important;
 	}
+	#fraCaveList {
+	    width: 100% !important;
+	}
+	#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
+	    flex: 0 0 auto !important;
+	    scroll-snap-align: center !important;
+		z-index: 10 !important;
+		width: 100% !important;
+		height: 160px !important;
+	}
+	#fraCaveList {
+		padding-left: 275px;
+		padding-right: 275px;
+	}
+	#fraMoundList .mound-grid {
+		top: -160px !important;
+		left: 15% !important;
+	}
+	#fraMoundList .mound-grid img {
+		width: 180px !important;
+		height: 80px !important;
+	}
+	
 }
 
 @media (max-width: 1200px) {
@@ -709,6 +723,28 @@ b:has(span), #attack, #sparring, #reclaim, .feature, #clans, .dynastycollection,
 	}
 	.table .bottom {
 		top: -275px !important;
+	}
+	#fraCaveList {
+	    width: 100% !important;
+	}
+	#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
+	    flex: 0 0 auto !important;
+	    scroll-snap-align: center !important;
+		z-index: 10 !important;
+		width: 275px !important;
+		height: 160px !important;
+	}
+	#fraCaveList {
+		padding-left: 275px;
+		padding-right: 275px;
+	}
+	#fraMoundList .mound-grid {
+		top: -160px !important;
+		left: 10%; !important;
+	}
+	#fraMoundList .mound-grid img {
+		width: 150px !important;
+		height: 80px !important;
 	}
 }
 
@@ -721,7 +757,32 @@ b:has(span), #attack, #sparring, #reclaim, .feature, #clans, .dynastycollection,
 	.table .bottom {
 		top: -275px !important;
 	}
-
+	#fraCaveList {
+	    width: 100% !important;
+	}
+	.col-md-4 {
+		width: 33% !important;
+	}
+	#fraCaveList > div.col-md-4.col-xs-6.center {
+	    flex: 0 0 auto !important;
+	    scroll-snap-align: center !important;
+		z-index: 10 !important;
+		width: 275px !important;
+		height: 160px !important;
+	}
+	#fraCaveList {
+		padding-left: 300px;
+		padding-right: 300px;
+	}
+	#fraMoundList .mound-grid {
+		top: -160px !important;
+		left: -10%; !important;
+		width: 80% !important;
+	}
+	#fraMoundList .mound-grid img {
+		width: 170px !important;
+		height: 80px !important;
+	}
 }
 
 @media (max-width: 769px) {
@@ -733,6 +794,39 @@ b:has(span), #attack, #sparring, #reclaim, .feature, #clans, .dynastycollection,
 	.table .bottom {
 		top: -275px !important;
 	}
+	.navbar a {
+		padding-right: 14px !important;
+		padding-top: 20px !important;
+	}
+	.table .bottom {
+		top: -275px !important;
+	}
+	#fraCaveList {
+	    width: 100% !important;
+	}
+	.col-md-4 {
+		width: 33% !important;
+	}
+	#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
+	    flex: 0 0 auto !important;
+	    scroll-snap-align: center !important;
+		z-index: 10 !important;
+		width: 275px !important;
+		height: 160px !important;
+	}
+	#fraCaveList {
+		padding-left: 295px;
+		padding-right: 295px;
+	}
+	#fraMoundList .mound-grid {
+		top: -150px !important;
+		left: -10%; !important;
+		width: 70% !important;
+	}
+	#fraMoundList .mound-grid img {
+		width: 170px !important;
+		height: 80px !important;
+	}
 }
 
 @media (max-width: 683px) {
@@ -743,6 +837,11 @@ b:has(span), #attack, #sparring, #reclaim, .feature, #clans, .dynastycollection,
 	}
 	.table .bottom {
 		top: -285px !important;
+	}
+
+	#fraMoundList .mound-grid img {
+		width: 170px !important;
+		height: 80px !important;
 	}
 }
 

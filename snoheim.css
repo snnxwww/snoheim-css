@@ -153,6 +153,9 @@ button.navbar-toggle:hover {
 	text-align: left !important;
 	border-radius: 0px !important;
 }
+.alert:nth-child(6) {
+	transform: translateY(-80%) !important;
+ }
 .alert:nth-child(7) {
 	transform: translateY(-80%) !important;
  }

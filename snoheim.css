@@ -169,17 +169,17 @@ button.navbar-toggle:hover {
 .alert:has(a[href="/halloween.php?dismissrabies=1"]) div {
 	display: none;
 }
-.alert:nth-child(4) {
-	transform: translateY(120%) !important;
+.alert ~ .alert {
+	transform: translateY(110%) !important;
 }
-.alert:nth-child(5) {
-	transform: translateY(240%) !important;
+.alert ~ .alert ~ .alert {
+	transform: translateY(220%) !important;
 }
-.alert:nth-child(6) {
-	transform: translateY(360%) !important;
+.alert ~ .alert ~ .alert ~ .alert {
+	transform: translateY(330%) !important;
 }
-.alert:nth-child(7) {
-	transform: translateY(360%) !important;
+.alert ~ .alert ~ .alert ~ .alert ~ .alert {
+	transform: translateY(430%) !important;
 }
 .alert a {
 	transition: 0.5s !important;
@@ -188,15 +188,19 @@ button.navbar-toggle:hover {
 .alert a:hover {
 	transform: translateX(4px) !important;
 }
+.alert + br {
+	display: none !important;
+}
 .alert br {
-	display: none;
+	display: none !important;
 }
 .alert button {
-	margin-left: 10px !important;
-	margin-top: -10px !important;
-	padding: 0px !important;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
+	padding: 1px !important;
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+	padding-bottom: 0px !important;
+	margin-top: -1.5px !important;
+	margin-left: 5px !important;
 }
 center .alert {
 	font-family: var(--alert-font) !important;
@@ -701,103 +705,6 @@ h1 {
 
 
 
-/* PRIVATE STYLES */
-*:has(a[href*="refer.php"]) {
-	#player .center.h3 {
-		margin-top: 30px !important;
-	}
-	#player.table .top .floatright {
-		top: 68px !important;*/
-	}
-	.center a[href^="/wishlist.php"]::after {
-	    content: "View Bounties";
-	    margin-left: -125px !important;
-		transition: 0.5s !important;
-	}
-	.center a[href^="/wishlist.php"]:hover:after {
-	    margin-left: -120px !important;
-		margin: 5px;*/
-	}
-	.center a[href^="/refer.php"]::after {
-	    content: "Recruit an Ally";
-	    margin-left: -110px !important;
-		transition: 0.5s !important;
-	}
-	.center a[href^="/refer.php"]:hover:after {
-	    margin-left: -105px !important;
-		margin: 5px;
-	}
-	b:has(span)  {
-		position: absolute !important;
-	}
-	.feature {
-		position: absolute !important;
-		top: 1300px !important;
-		width: 85% !important;
-		left: 7.5% !important;
-		height: 150px !important;
-		gap: 0px !important;
-	}
-	#sparring {
-		position: absolute !important;
-		top: 2200px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-	}
-	#reclaim {
-		position: absolute !important;
-		top: 2375px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-	}
-	.dynastycollection {
-		position: absolute !important;
-		top: 2525px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-	}
-	.col-sm-4 {
-		position: absolute !important;
-		top: 2585px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		width: 33% !important;
-	}
-	.col-sm-4:nth-child(1) {
-		transform: translateX(92.5%);
-	}
-	.col-sm-4:nth-child(2) {
-		transform: translateX(185%);
-	}
-	form:has(input[name="atid"]) table.table:first-of-type {
-		position: absolute !important;
-		top: 2625px !important;
-		width: 95% !important;
-		left: 2.5% !important;	
-	}	
-	form:has(input[name="atid"]) > div.left {
-		position: absolute !important;
-		top: 2675px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-	}
-	#editdetailspanel {
-		position: absolute !important;
-		top: 37.25px !important;
-		left: 0.125%;
-		width: 95% !important;
-		z-index: 10 !important;
-	}
-	#editdetailspanel table {
-		width: 100% !important;
-		padding-bottom: 100px !important;
-	}
-	b:has(span) {
-		display: none !important;
-	}
-}
-
-
 
 /* LAYOUT SETTINGS / PUBLIC */
 @media (min-width: 1200px) {
@@ -1005,27 +912,176 @@ h1 {
 }
 
 
+/* PRIVATE STYLES */
+*:has(a[href*="refer.php"]) {
+	#player .center.h3 {
+		margin-top: 30px !important;
+	}
+	#player.table .top .floatright {
+		top: 68px !important;*/
+	}
+	.center a[href^="/wishlist.php"]::after {
+	    content: "View Bounties";
+	    margin-left: -125px !important;
+		transition: 0.5s !important;
+	}
+	.center a[href^="/wishlist.php"]:hover:after {
+	    margin-left: -120px !important;
+		margin: 5px;*/
+	}
+	.center a[href^="/refer.php"]::after {
+	    content: "Recruit an Ally";
+	    margin-left: -110px !important;
+		transition: 0.5s !important;
+	}
+	.center a[href^="/refer.php"]:hover:after {
+	    margin-left: -105px !important;
+		margin: 5px;
+	}
+	b:has(span)  {
+		position: absolute !important;
+	}
+	.feature {
+		position: absolute !important;
+		top: 1325px !important;
+		width: 85% !important;
+		left: 7.5% !important;
+		height: 150px !important;
+		gap: 0px !important;
+	}
+	#sparring {
+		position: absolute !important;
+		top: 2200px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	#reclaim {
+		position: absolute !important;
+		top: 2375px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	.dynastycollection {
+		position: absolute !important;
+		top: 2525px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	.col-sm-4 {
+		position: absolute !important;
+		top: 2585px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+		width: 33% !important;
+	}
+	.col-sm-4:nth-child(1) {
+		transform: translateX(92.5%);
+	}
+	.col-sm-4:nth-child(2) {
+		transform: translateX(185%);
+	}
+	form:has(input[name="atid"]) table.table:first-of-type {
+		position: absolute !important;
+		top: 2625px !important;
+		width: 95% !important;
+		left: 2.5% !important;	
+	}	
+	form:has(input[name="atid"]) > div.left {
+		position: absolute !important;
+		top: 2675px !important;
+		width: 95% !important;
+		left: 2.5% !important;
+	}
+	#editdetailspanel {
+		position: absolute !important;
+		top: 37.25px !important;
+		left: 0.125%;
+		width: 95% !important;
+		z-index: 10 !important;
+	}
+	#editdetailspanel table {
+		width: 100% !important;
+		padding-bottom: 100px !important;
+	}
+	b:has(span) {
+		display: none !important;
+	}
+}
+
+
 /* LAYOUT SETTINGS / PERSONAL */
 @media (min-width: 1200px) {
 	/* LARGE SCREEN / DESKTOP */
 	*:has(a[href*="refer.php"]) {
-		.col-md-9 {
-			height: 2715px !important;
+		/* HAS: FAPA + SPARRING + RECLAIM OPTIONS */
+		.col-md-9:has(table#sparring, table#reclaim) {
+		    height: 2725px !important;
 		}
-		.col-md-9:has(#editdetailspanel[style*="display: block"]) {
+		.col-md-9:has(table#sparring):has(table#reclaim) .dynastycollection  {
+			top: 2525px !important;
+		}
+		.col-md-9:has(table#sparring):has(table#reclaim) .col-sm-4 {
+			top: 2587.5px !important;
+		}
+		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) table.table:first-of-type {
+			top: 2628.75px !important;
+		}
+		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) > div.left {
+			top: 2675px !important;
+		}
+		.col-md-9:has(table#sparring):has(table#reclaim):has(#editdetailspanel[style*="display: block"]) {
 		    height: 3175px !important;
+		}
+		/* HAS: FAPA + SPARRING OPTIONS */
+		.col-md-9:has(table#sparring):not(:has(table#reclaim)) {
+		    height: 2525px !important;
+		}
+		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .dynastycollection {
+		    top: 2362.5px !important;
+		}	
+		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .col-sm-4 {
+		    top: 2425px !important;
+		}
+		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) table.table:first-of-type {
+		    top: 2465.5px !important;
+		}
+		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) > div.left {
+		    top: 2425px !important;
+		}
+		/* HAS: FAPA + RECLAIM OPTION */
+		.col-md-9:has(table#reclaim):not(:has(table#sparring)) {
+		    height: 2525px !important;
+		}
+		.col-md-9:has(table#reclaim):not(:has(table#sparring)) #sparring {
+		    top: 2200px !important;
+		}
+		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .dynastycollection {
+		    top: 2362.5px !important;
+		}
+		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .col-sm-4 {
+		    top: 2425px !important;
+		}
+		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) table.table:first-of-type {
+		    top: 2465.5px !important;
+		}
+		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) > div.left {
+		    top: 2425px !important;
 		}
 	}
 }
+
 
 @media (max-width: 1200px) {
 	/* LARGE SCREEN / LAPTOP + TABLET */
 	*:has(a[href*="refer.php"]) {
 		.col-md-9 {
-			height: 2725px !important;
+			height: #px !important;
 		}
 		.col-md-9:has(#editdetailspanel[style*="display: block"]) {
 		    height: 3175px !important;
+		}
+		.col-md-9:has(form table#reclaim, form table#sparring) {
+			height: 2715px !important;
 		}
 	}
 }
@@ -1034,6 +1090,9 @@ h1 {
 	/* SMALL SCREEN / TABLET + PHONE */
 	*:has(a[href*="refer.php"]) {
 		.col-md-9 {
+			height: 2725px !important;
+		}
+		.col-md-9:has(form table#reclaim, form table#sparring) {
 			height: 2725px !important;
 		}
 	}

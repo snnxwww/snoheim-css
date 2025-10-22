@@ -353,10 +353,11 @@ h1 {
 }
 #player.table .top .floatright {
 	position: relative !important;
-	left: -45% !important;
+	left: -40% !important;
 	margin: -15px !important;
 	font-size: calc(var(--playercard-headingfontsize)*0.8) !important;
-	font-family: var(--playercard-headingfont)
+	font-family: var(--playercard-headingfont) !important;
+	top: 48px !important;
 }
 #player.table .inner-table {
 	display: none !important;
@@ -748,7 +749,6 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
-		overflow-y: hidden !important;
 	}
 }
 
@@ -790,7 +790,6 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
-		overflow-y: hidden !important
 	}
 }
 
@@ -836,7 +835,6 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
-		overflow-y: hidden !important
 	}
 }
 
@@ -889,7 +887,6 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
-		overflow-y: hidden !important;
 	}
 }
 
@@ -914,8 +911,7 @@ h1 {
 		height: 100px !important;
 	}
 	.col-md-9 {
-		height: 2225px !important;
-		overflow-y: hidden !important;
+		height: 2300px !important;
 	}
 }
 

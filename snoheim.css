@@ -12,6 +12,7 @@
 	--playercard-headingfont: "Jim Nightshade";
 	--playercard-font: "Jim Nightshade";
 	--about-headingfont: "Jim Nightshade";
+	--comment-font: "Jim Nightshade";
 	--about-font: "Jim Nightshade";
 	--caves-font: "Jim Nightshade";
 
@@ -21,12 +22,12 @@
 	--featurelion-headingfontsize: 56px;
 	--featurelionbutton-fontsize: 26px;
 	--featurelion-fontsize: 16px;
-	
 	--alert-fontsize: 12px;
 	--playercard-headingfontsize: 32px;
 	--playercard-fontsize: 15px;
-	--about-headingfontsize: 26px;
-	--about-fontsize: 16px;
+	--about-headingfontsize: 34px;
+	--about-fontsize: 18px;
+	--comment-fontsize: 16px;
 	--caves-fontsize: 18px;
 
 	/* IMAGE REPLACEMENTS */
@@ -192,6 +193,9 @@ button.navbar-toggle:hover {
 	display: none !important;
 }
 .alert br {
+	display: none !important;
+}
+h1 + br {
 	display: none !important;
 }
 .alert button {
@@ -542,12 +546,16 @@ h1 {
 	left: 27.5% !important;
 	height: 210px !important;
 	left: 27.5% !important;
+	font-size: var(--comment-fontsize) !important;
+	font-family: var(--comment-font) !important;
 }
 #makeComment {
 	position: absolute !important;
 	top: 1682.5px !important;
 	width: 70% !important;
 	left: 27.5% !important;
+	font-size: var(--comment-fontsize) !important;
+	font-family: var(--comment-font) !important;
 }
 
 /* CAVES AND MOUNDS */

@@ -142,8 +142,8 @@ button.navbar-toggle:hover {
 	font-family: var(--alert-font) !important;
 	font-size: var(--alert-fontsize) !important;
 	border: none !important;
-	position: relative !important;
-	top: -610px !important;
+	position: absolute !important;
+	top: 0.2% !important;
 	left: 10px !important;
 	width: 69% !important;
 	margin-bottom: 4px !important;
@@ -153,9 +153,18 @@ button.navbar-toggle:hover {
 	text-align: left !important;
 	border-radius: 0px !important;
 }
+.alert:nth-child(4) {
+	transform: translateY(120%) !important;
+}
+.alert:nth-child(5) {
+	transform: translateY(240%) !important;
+}
+.alert:nth-child(6) {
+	transform: translateY(360%) !important;
+}
 .alert:nth-child(7) {
-	transform: translateY(-80%) !important;
- }
+	transform: translateY(360%) !important;
+}
 .alert a {
 	transition: 0.5s !important;
 	display: inline-block !important;
@@ -975,13 +984,13 @@ h1 {
 	/* SMALL SCREEN / PHONE */
 	*:has(a[href*="refer.php"]) {
 		.feature {
-			top: 1150px !important;
+			top: 1267/5px !important;
 			width: 85% !important;
 			left: 7.5% !important;
 			height: 150px !important;
 		}
 		form:has(input[name="feedall"]) .feature {
-			top: 1300px !important;
+			top: 1412.5px !important;
 		}
 	
 		#sparring {

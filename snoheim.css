@@ -188,6 +188,16 @@ button.navbar-toggle:hover {
 .alert a:hover {
 	transform: translateX(4px) !important;
 }
+.alert br {
+	display: none;
+}
+.alert button {
+	margin-left: 10px !important;
+	margin-top: -10px !important;
+	padding: 0px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
 center .alert {
 	font-family: var(--alert-font) !important;
 	font-size: var(--alert-fontsize) !important;

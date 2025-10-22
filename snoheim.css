@@ -758,16 +758,19 @@ h1 {
 		transform: translateX(185%);
 	}
 	form:has(input[name="atid"]) table.table:first-of-type {
-	position: absolute !important;
-	top: 2625px !important;
-	width: 95% !important;
-	left: 2.5% !important;	
+		position: absolute !important;
+		top: 2625px !important;
+		width: 95% !important;
+		left: 2.5% !important;	
 	}	
 	form:has(input[name="atid"]) > div.left {
 		position: absolute !important;
 		top: 2675px !important;
 		width: 95% !important;
 		left: 2.5% !important;
+	}
+	b:has(span) {
+		display: none !important;
 	}
 }
 

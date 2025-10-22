@@ -851,7 +851,7 @@ h1 {
 @media (max-width: 992px) {
 	/* SMALL SCREEN / TABLET + PHONE */
 	.navbar a {
-		padding-right: 14px !important;
+		padding-right: 12px !important;
 		padding-top: 20px !important;
 	}
 	.table .bottom {

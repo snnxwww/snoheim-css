@@ -748,6 +748,7 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
+		overflow-y: hidden !important;
 	}
 }
 
@@ -789,6 +790,7 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
+		overflow-y: hidden !important
 	}
 }
 
@@ -834,6 +836,7 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
+		overflow-y: hidden !important
 	}
 }
 
@@ -886,6 +889,7 @@ h1 {
 	}
 	.col-md-9 {
 		height: 2300px !important;
+		overflow-y: hidden !important;
 	}
 }
 
@@ -910,7 +914,8 @@ h1 {
 		height: 100px !important;
 	}
 	.col-md-9 {
-		height: 2300px !important;
+		height: 2225px !important;
+		overflow-y: hidden !important;
 	}
 }
 
@@ -1255,22 +1260,22 @@ h1 {
 		}
 		/* HAS: FAPA + SPARRING OPTIONS */
 		.col-md-9:has(table#sparring):not(:has(table#reclaim)) {
-		    height: 2750px !important;
+		    height: 2550px !important;
 		}
 		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .dynastycollection {
-		    top: 2550px !important;
+		    top: 2362.5px !important;
 		}	
 		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .col-sm-4 {
-		    top: 2612.5px !important;
+		    top: 2425px !important;
 		}
 		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2650.5px !important;
+		    top: 2465.5px !important;
 		}
 		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) > div.left {
-		    top: 2700px !important;
+		    top: 2512.5px !important;
 		}
 		.col-md-9:has(table#sparring):not(:has(table#reclaim)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3200px !important;
+		    height: 3000px !important;
 		}
 		/* HAS: FAPA + RECLAIM OPTION */
 		.col-md-9:has(table#reclaim):not(:has(table#sparring)) {

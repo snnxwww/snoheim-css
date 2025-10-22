@@ -39,17 +39,6 @@
 	
 }
 
-/* Targets the main page scrollbar in WebKit browsers */
-*::-webkit-scrollbar {
-    display: none !important;
-}
-
-/* Ensure all three fixes are applied for full coverage */
-body, html {
-    scrollbar-width: none !important; /* Firefox */
-    -ms-overflow-style: none !important; /* IE/Edge Legacy */
-}
-
 * {
 	border: none !important;
 	border-radius: 0px !important;
@@ -57,6 +46,9 @@ body, html {
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	transition: 0.5s !important;
+}
+.col-md-9 {
+	height: 2950px !important;
 }
 
 /* TOPBAR */
@@ -155,19 +147,11 @@ button.navbar-toggle:hover {
 	left: 10px !important;
 	width: 69% !important;
 	margin-bottom: 4px !important;
-	padding: 4px 10px !important;
+	padding: 4px !important;
+	padding-left: 10px !important;
 	z-index: 25 !important;
 	text-align: left !important;
-	border-radius: 0 !important;
-	height: 25px !important;
-	overflow-x: auto !important;
-	overflow-y: hidden !important;
-	white-space: nowrap !important;
-	scrollbar-width: none !important;
-	-ms-overflow-style: none !important;
-}
-.alert:has(a[href="/halloween.php?dismissrabies=1"]) div {
-	display: none;
+	border-radius: 0px !important;
 }
 .alert:nth-child(4) {
 	transform: translateY(120%) !important;
@@ -491,6 +475,9 @@ h1 {
 	padding: 15px !important;
 	overflow-y: auto !important;
 	height: 450px !important;
+	:-webkit-scrollbar {
+	display: none !important;
+	}
 	scrollbar-width: none !important;
 	-ms-overflow-style: none !important;
 }
@@ -557,7 +544,9 @@ h1 {
     overflow-x: auto !important;
     scrollbar-width: none !important; 
     -ms-overflow-style: none !important;
-    
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
     scroll-snap-type: x mandatory !important;
     scroll-behavior: smooth !important;
     width: 100% !important;
@@ -567,6 +556,7 @@ h1 {
     scroll-snap-align: center !important;
 	z-index: 10 !important;
 	height: 160px !important;
+	background: #000;
 }
 #fraCaveList > div:nth-child(1) {
 	order: 7; 
@@ -730,7 +720,7 @@ h1 {
 	}
 	.feature {
 		position: absolute !important;
-		top: 1275px !important;
+		top: 1315px !important;
 		width: 85% !important;
 		left: 7.5% !important;
 		height: 150px !important;
@@ -819,9 +809,6 @@ h1 {
 		width: 20% !important;
 		height: 100px !important;
 	}
-	.col-md-9 {
-		height: 2300px !important;
-	}
 }
 
 @media (max-width: 1200px) {
@@ -858,9 +845,6 @@ h1 {
 	.dynastylist {
 		width: 20% !important;
 		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
 	}
 }
 
@@ -902,9 +886,6 @@ h1 {
 	.dynastylist {
 		width: 20% !important;
 		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
 	}
 }
 
@@ -954,9 +935,6 @@ h1 {
 		width: 20% !important;
 		height: 100px !important;
 	}
-	.col-md-9 {
-		height: 2300px !important;
-	}
 }
 
 @media (max-width: 683px) {
@@ -977,9 +955,6 @@ h1 {
 		width: 20% !important;
 		height: 100px !important;
 	}
-	.col-md-9 {
-		height: 2300px !important;
-	}
 }
 
 
@@ -987,27 +962,21 @@ h1 {
 @media (min-width: 1200px) {
 	/* LARGE SCREEN / DESKTOP */
 	*:has(a[href*="refer.php"]) {
-		.col-md-9 {
-			height: 2725px !important;
-		}
+		
 	}
 }
 
 @media (max-width: 1200px) {
 	/* LARGE SCREEN / LAPTOP + TABLET */
 	*:has(a[href*="refer.php"]) {
-		.col-md-9 {
-			height: 2725px !important;
-		}
+		
 	}
 }
 
 @media (max-width: 992px) {
 	/* SMALL SCREEN / TABLET + PHONE */
 	*:has(a[href*="refer.php"]) {
-		.col-md-9 {
-			height: 2725px !important;
-		}
+		
 	}
 }
 
@@ -1023,6 +992,7 @@ h1 {
 		form:has(input[name="feedall"]) .feature {
 			top: 1412.5px !important;
 		}
+	
 		#sparring {
 			top: 2375px !important;
 			width: 95% !important;
@@ -1053,9 +1023,6 @@ h1 {
 			top: 2875px !important;
 			width: 95% !important;
 			left: 2.5% !important;
-		}
-		.col-md-9 {
-			height: 2925px !important;
 		}
 	}
 }

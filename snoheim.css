@@ -39,6 +39,17 @@
 	
 }
 
+/* Targets the main page scrollbar in WebKit browsers */
+*::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Ensure all three fixes are applied for full coverage */
+body, html {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE/Edge Legacy */
+}
+
 * {
 	border: none !important;
 	border-radius: 0px !important;
@@ -144,11 +155,19 @@ button.navbar-toggle:hover {
 	left: 10px !important;
 	width: 69% !important;
 	margin-bottom: 4px !important;
-	padding: 4px !important;
-	padding-left: 10px !important;
+	padding: 4px 10px !important;
 	z-index: 25 !important;
 	text-align: left !important;
-	border-radius: 0px !important;
+	border-radius: 0 !important;
+	height: 25px !important;
+	overflow-x: auto !important;
+	overflow-y: hidden !important;
+	white-space: nowrap !important;
+	scrollbar-width: none !important;
+	-ms-overflow-style: none !important;
+}
+.alert:has(a[href="/halloween.php?dismissrabies=1"]) div {
+	display: none;
 }
 .alert:nth-child(4) {
 	transform: translateY(120%) !important;
@@ -472,9 +491,6 @@ h1 {
 	padding: 15px !important;
 	overflow-y: auto !important;
 	height: 450px !important;
-	:-webkit-scrollbar {
-	display: none !important;
-	}
 	scrollbar-width: none !important;
 	-ms-overflow-style: none !important;
 }
@@ -541,9 +557,7 @@ h1 {
     overflow-x: auto !important;
     scrollbar-width: none !important; 
     -ms-overflow-style: none !important;
-    &::-webkit-scrollbar {
-        display: none !important;
-    }
+    
     scroll-snap-type: x mandatory !important;
     scroll-behavior: smooth !important;
     width: 100% !important;

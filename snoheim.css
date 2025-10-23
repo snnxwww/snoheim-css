@@ -964,33 +964,53 @@ h1 {
 		height: 200px !important;
 		background: #ffffff;
 		position: absolute !important;
-		top: 2025px;
-		width: 95%;
+		top: 2025px !important;
+		width: 95% !important;
 		left: 2.5% !important;
+		padding-top: 80px !important;
+	}
+	*:has(.feature) .fapa {
+		color: #ffffff;
 	}
 	.sparring {
 		height: 150px !important;
 		background: #ffffff;
 		position: absolute !important;
-		top: 2255px;
-		width: 95%;
+		top: 2255px !important;
+		width: 95% !important;
 		left: 2.5% !important;
+		padding-top: 65px !important;
+	}
+	*:has(#sparring) .sparring {
+		color: #ffffff;
 	}
 	.reclaim {
 		height: 150px !important;
 		background: #ffffff;
 		position: absolute !important;
-		top: 2437.5px;
-		width: 95%;
+		top: 2437.5px !important;
+		width: 95% !important;
 		left: 2.5% !important;
+		padding-top: 65px !important;
 	}
-	.feature {
+	*:has(#reclaim) .reclaim {
+		color: #ffffff;
+	}
+	form:has(input[name="feedall"]) .feature {
 		position: absolute !important;
-		top: 1287.5px !important;
-		width: 75% !important;
-		left: 12.5% !important;
-		height: 150px !important;
-		gap: 0px !important;
+		top: 1270px !important;
+		width: 87.5% !important;
+		left: 2.5% !important;
+		height: 190px !important;
+		padding-top: 25px !important;
+	}
+	form:has(input[name="playall"]) .feature {
+		position: absolute !important;
+		top: 1270px !important;
+		width: 87.5% !important;
+		left: 10% !important;
+		height: 190px !important;
+		padding-top: 25px !important;
 	}
 	#sparring {
 		position: absolute !important;
@@ -1051,60 +1071,25 @@ h1 {
 		height: 2800px !important;
 	}
 	.col-md-9:has(#editdetailspanel[style*="display: block"]) {
-		    height: 3250px !important;
-		}
-}
-
-
-
-
-/* LAYOUT SETTINGS / PERSONAL */
-@media (min-width: 1200px) {
-	/* LARGE SCREEN / DESKTOP */
-	*:has(a[href*="refer.php"]) {
-		
+		height: 3250px !important;
 	}
 }
 
-
-@media (max-width: 1200px) {
-	/* LARGE SCREEN / LAPTOP + TABLET */
+@media (max-width: 769px) {
+	/* SMALL SCREEN / PHONE */
 	*:has(a[href*="refer.php"]) {
-		
-	}
-}
-
-@media (max-width: 992px) {
-	/* SMALL SCREEN / TABLET + PHONE */
-	*:has(a[href*="refer.php"]) {
-		
-	}
-}
-
-/*@media (max-width: 769px) {
-	/* SMALL SCREEN / PHONE *
-	*:has(a[href*="refer.php"]) {
-		.feature {
-			top: 1267/5px !important;
-			width: 85% !important;
-			left: 7.5% !important;
-			height: 150px !important;
-		}
 		form:has(input[name="feedall"]) .feature {
-			top: 1475px !important;
+			top: 1250px !important;
+			width: 43.5% !important;
+			left: 5% !important;
 		}
-		#sparring {
-			top: 2375px !important;
-			width: 95% !important;
-			left: 2.5% !important;
-		}
-		#reclaim {
-			top: 2550px !important;
-			width: 95% !important;
-			left: 2.5% !important;
+		form:has(input[name="playall"]) .feature {
+			top: 1270px !important;
+			width: 43.5% !important;
+			left: 51.5% !important;
 		}
 	}
-}*/
+}
 
 
 /* COLOUR SETTINGS */

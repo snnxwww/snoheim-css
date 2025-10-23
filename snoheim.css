@@ -347,6 +347,9 @@ h1 {
 	width: 95%;
 	left: 2.5% !important;
 }
+.about-table br {
+	display: none !important;
+}
 .player-card {
 	padding: 10px;
 	overflow-y: auto;
@@ -964,17 +967,12 @@ h1 {
 		top: 2025px !important;
 		width: 95% !important;
 		left: 2.5% !important;
-		padding-top: 90px !important;
+		padding-top: 80px !important;
 		font-size: var(--tables-fontsize) !important;
 		font-family: var(--tables-font) !important;
 	}
-	.fapa:after {
-		content: "You Do not have feed all, play all active" !important;
-		font-size: var(--tables-fontsize) !important;
-		color: #000;
-	}
-	*:has(.feature) .fapa:after {
-		color: #ffffff00;
+	*:has(.feature) .fapa {
+		color: #ffffff;
 	}
 	.sparring {
 		height: 150px !important;
@@ -987,13 +985,8 @@ h1 {
 		font-size: var(--tables-fontsize) !important;
 		font-family: var(--tables-font) !important;
 	}
-	.sparring:after {
-		content: "You have no available sub males to spar with." !important;
-		font-size: var(--tables-fontsize) !important;
-		color: #000;
-	}
-	*:has(#sparring) .sparring:after {
-		color: #ffffff00;
+	*:has(#sparring) .sparring {
+		color: #ffffff;
 	}
 	.reclaim {
 		height: 150px !important;
@@ -1006,13 +999,8 @@ h1 {
 		font-size: var(--tables-fontsize) !important;
 		font-family: var(--tables-font) !important;
 	}
-	.reclaim:after {
-		content: "You have no lions to reclaim." !important;
-		font-size: var(--tables-fontsize) !important;
-		color: #000;
-	}
-	*:has(#reclaim) .reclaim:after {
-		color: #ffffff00;
+	*:has(#reclaim) .reclaim {
+		color: #ffffff;
 	}
 	form:has(input[name="feedall"]) .feature {
 		position: absolute !important;

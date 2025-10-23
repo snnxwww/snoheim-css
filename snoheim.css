@@ -61,6 +61,7 @@
 .col-md-9 {
 	overflow-x: hidden;
 	padding: 0px !important;
+	background-size: cover !important;
 }
 
 /* TOPBAR */

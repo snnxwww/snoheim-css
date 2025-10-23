@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Jim+Nightshade&family=Kings&family=Whisper&display=swap');
 
-/* VARIABLES */
 :root {
 	/* FONT */
 	--topbar-font: "Jim Nightshade";
@@ -34,21 +33,12 @@
 	--tables-headingfontsize: 24px;
 	--tables-fontsize: 14px;
 
-	/* IMAGE REPLACEMENTS */
-	--sbicon: url('');
-	--gbicon: url('');
-	--logo: url('');
-
-	/* TOPBAR */
-
-	
 }
+	
 
-/* Targets the main page scrollbar in WebKit browsers */
 *::-webkit-scrollbar {
     display: none !important;
 }
-
 * {
 	border: none !important;
 	border-radius: 0px !important;
@@ -122,6 +112,8 @@
 }
 .navbar a {
 	font-size: var(--navbar-fontsize) !important;
+	padding-right: 30px !important;
+	padding-top: 18px !important;
 }
 .navbar a:hover {
 	background-color: transparent !important;
@@ -157,8 +149,8 @@ button.navbar-toggle:hover {
 	border: none !important;
 	position: absolute !important;
 	top: 0.2% !important;
-	left: 10px !important;
-	width: 69% !important;
+	left: 0.75% !important;
+	width: 66% !important;
 	margin-bottom: 4px !important;
 	padding: 4px 10px !important;
 	z-index: 25 !important;
@@ -218,18 +210,21 @@ center .alert {
 	padding: 4px !important;
 	padding-left: 10px !important;
 	z-index: 25 !important;
-	top: 530px !important;
+	top: 23.5% !important;
 	text-align: center !important;
 	border-radius: 0px !important;
 	width: 90% !important;
 	height: 24px !important;
 	left: 5% !important;
 }
-center .alert:nth-child(4) {
+center .alert ~ .alert {
 	transform: translateY(-110%) !important;
 }
-center .alert:nth-child(5) {
+center .alert ~ .alert ~ .alert {
 	transform: translateY(-220%) !important;
+}
+center .alert ~ .alert ~ .alert ~ .alert {
+	transform: translateY(-330%) !important;
 }
 
 /* FEATURE LION */
@@ -573,10 +568,14 @@ h1 {
 #fraOrganizationBlock {
 	position: absolute !important;
 	top: 1750px !important;
-	width: 100% !important;
+	width: 95% !important;
+	left: 2.5% !important;
 	font-size: var(--caves-fontsize) !important;
 	font-family: var(--caves-font) !important;
 }
+#fraOrganizationBlock .col-md-4 {
+	width: 33% !important;
+	}
 #fraCaveList {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -585,12 +584,16 @@ h1 {
     -ms-overflow-style: none !important;
     scroll-snap-type: x mandatory !important;
     scroll-behavior: smooth !important;
+	padding-left: 275px !important;
+	padding-right: 275px;
+    width: 100% !important;	
 }
 #fraCaveList > div.col-md-4.col-xs-6.center, #fra {
     flex: 0 0 auto !important;
     scroll-snap-align: center !important;
 	z-index: 10 !important;
 	height: 160px !important;
+	width: 300px !important;
 }
 #fraCaveList > div:nth-child(1) {
 	order: 7; 
@@ -660,11 +663,13 @@ h1 {
 #fraOrganizationBlock .col-md-4:hover {
 	font-size: calc(var(--caves-fontsize)*1.1) !important;
 }
-#fraCaveList {
-	padding-left: 275px;
-	padding-right: 275px;
+#fraMoundList .mound-grid img {
+	width: 180px !important;
+	height: 80px !important;
 }
 #fraMoundList .mound-grid {
+	top: -160px !important;
+	left: 15% !important;
 	position: relative !important;
 	height: 100px !important;
 	z-index: 0 !important;
@@ -688,7 +693,6 @@ h1 {
 #fraCaveList .col-md-4 {
 	line-height: 15px !important;
 }
-
 
 /* ATTACK */
 #attack {
@@ -721,440 +725,239 @@ h1 {
 .dynastylist img {
 	height: 40px !important;
 }
-
-
-
-
-/* LAYOUT SETTINGS / PUBLIC */
-@media (min-width: 1200px) {
-	/* LARGE SCREEN / DESKTOP */
-	.navbar a {
-		padding-right: 30px !important;
-		padding-top: 18px !important;
-	}
-	#fraCaveList {
-	    width: 100% !important;
-	}
-	#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
-	    flex: 0 0 auto !important;
-	    scroll-snap-align: center !important;
-		z-index: 10 !important;
-		width: 100% !important;
-		height: 160px !important;
-	}
-	#fraCaveList {
-		padding-left: 275px;
-		padding-right: 275px;
-		width: 97.5% !important;
-	}
-	#fraMoundList .mound-grid {
-		top: -160px !important;
-		left: 15% !important;
-	}
-	#fraMoundList .mound-grid img {
-		width: 180px !important;
-		height: 80px !important;
-	}
-	.dynastylist {
-		width: 20% !important;
-		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
-		overflow-y: hidden !important;
-	}
+.dynastylist {
+	width: 20% !important;
+	height: 100px !important;
 }
 
+.col-md-9 {
+	height: 2300px !important;
+	overflow-y: hidden !important;
+}
+
+
+*:has(a[href*="refer.php"]) center .alert {
+	top: 19.25% !important;
+}
+*:has(a[href*="refer.php"]) #player .center.h3 {
+	margin-top: 30px !important;
+}
+*:has(a[href*="refer.php"]) #player.table .top .floatright {
+	top: 68px !important;*/
+}
+*:has(a[href*="refer.php"]) .center a[href^="/wishlist.php"]::after {
+    content: "View Bounties";
+	margin-left: -125px !important;
+	transition: 0.5s !important;
+}
+*:has(a[href*="refer.php"]) .center a[href^="/wishlist.php"]:hover:after {
+	margin-left: -120px !important;
+	margin: 5px;*/
+}
+*:has(a[href*="refer.php"]) .center a[href^="/refer.php"]::after {
+	content: "Recruit an Ally";
+	margin-left: -110px !important;
+	transition: 0.5s !important;
+}
+*:has(a[href*="refer.php"]) .center a[href^="/refer.php"]:hover:after {
+	margin-left: -105px !important;
+	margin: 5px;
+}
+*:has(a[href*="refer.php"]) b:has(span)  {
+	display: none !important;
+}
+*:has(a[href*="refer.php"]) .fapa {
+	height: 200px !important;
+	position: absolute !important;
+	top: 2025px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	padding-top: 90px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) .fapa:after {
+	content: "You Do not have feed all, play all active" !important;
+	font-size: var(--tables-fontsize) !important;
+	color: #000;
+}
+*:has(a[href*="refer.php"]) *:has(.feature) .fapa:after {
+	color: #ffffff00;
+}
+*:has(a[href*="refer.php"]) .sparring {
+	height: 150px !important;
+	position: absolute !important;
+	top: 2255px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	padding-top: 65px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) .sparring:after {
+	content: "You have no available sub males to spar with." !important;
+	font-size: var(--tables-fontsize) !important;
+	color: #000;
+}
+*:has(a[href*="refer.php"]) *:has(#sparring) .sparring:after {
+	color: #ffffff00;
+}
+*:has(a[href*="refer.php"]) .reclaim {
+	height: 150px !important;
+	position: absolute !important;
+	top: 2437.5px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	padding-top: 65px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) .reclaim:after {
+	content: "You have no lions to reclaim." !important;
+	font-size: var(--tables-fontsize) !important;
+}
+*:has(a[href*="refer.php"]) *:has(#reclaim) .reclaim:after {
+	color: #ffffff00;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
+	position: absolute !important;
+	top: 1270px !important;
+	width: 87.5% !important;
+	left: 2.5% !important;
+	height: 190px !important;
+	padding-top: 25px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature {
+	position: absolute !important;
+	top: 1270px !important;
+	width: 87.5% !important;
+	left: 10% !important;
+	height: 190px !important;
+	padding-top: 25px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) .feature h3 {
+	font-size: var(--tables-headingfontsize) !important;
+	font-family: var(--tables-headingfont) !important;
+}
+*:has(a[href*="refer.php"]) .feature span {
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) #sparring {
+	position: absolute !important;
+	top: 2255px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	height: 150px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) #reclaim {
+	position: absolute !important;
+	top: 2437.5px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	height: 150px !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) .dynastycollection {
+	position: absolute !important;
+	top: 2600px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+}
+*:has(a[href*="refer.php"]) .col-sm-4 {
+	position: absolute !important;
+	top: 2662.5px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	width: 33% !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) .col-sm-4:nth-child(1) {
+	transform: translateX(92.5%);
+}
+*:has(a[href*="refer.php"]) .col-sm-4:nth-child(2) {
+	transform: translateX(185%);
+}
+*:has(a[href*="refer.php"]) form:has(input[name="atid"]) table.table:first-of-type {
+	position: absolute !important;
+	top: 2700px !important;
+	width: 95% !important;
+	left: 2.5% !important;	
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}	
+*:has(a[href*="refer.php"]) form:has(input[name="atid"]) > div.left {
+	position: absolute !important;
+	top: 2750px !important;
+	width: 95% !important;
+	left: 2.5% !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) #editdetailspanel {
+	position: absolute !important;
+	top: 37.25px !important;
+	left: 0.125%;
+	width: 95% !important;
+	z-index: 10 !important;
+	font-size: var(--tables-fontsize) !important;
+	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) #editdetailspanel table {
+	width: 100% !important;
+	padding-bottom: 100px !important;
+}
+*:has(a[href*="refer.php"]) .col-md-9 {
+	height: 2800px !important;
+}
+*:has(a[href*="refer.php"]) .col-md-9:has(#editdetailspanel[style*="display: block"]) {
+	height: 3250px !important;
+}
+
+
+/* LAYOUT FIXES */
 @media (max-width: 1200px) {
-	/* LARGE SCREEN / LAPTOP + TABLET */
 	.navbar a {
-		padding-right: 18px !important;
-		padding-top: 18px !important;
-	}
-	#fraCaveList {
-	    width: 100% !important;
-	}
-	#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
-	    flex: 0 0 auto !important;
-	    scroll-snap-align: center !important;
-		z-index: 10 !important;
-		width: 275px !important;
-		height: 160px !important;
-	}
-	#fraCaveList {
-		padding-left: 275px;
-		padding-right: 275px;
-		width: 95% !important;
-	}
-	#fraMoundList .mound-grid {
-		top: -160px !important;
-		left: 10%; !important;
-	}
-	#fraMoundList .mound-grid img {
-		width: 150px !important;
-		height: 80px !important;
-	}
-	.dynastylist {
-		width: 20% !important;
-		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
-		overflow-y: hidden !important;
+		padding-right: 20px !important;
 	}
 }
 
 @media (max-width: 992px) {
-	/* SMALL SCREEN / TABLET + PHONE */
 	.navbar a {
-		padding-right: 14px !important;
-		padding-top: 20px !important;
-	}
-	#fraCaveList {
-	    width: 100% !important;
-	}
-	.col-md-4 {
-		width: 33% !important;
-	}
-	#fraCaveList > div.col-md-4.col-xs-6.center {
-	    flex: 0 0 auto !important;
-	    scroll-snap-align: center !important;
-		z-index: 10 !important;
-		width: 275px !important;
-		height: 160px !important;
-	}
-	#fraCaveList {
-		padding-left: 300px;
-		padding-right: 300px;
-		width: 95% !important;
+		padding-right: 12px !important;
 	}
 	#fraMoundList .mound-grid {
-		top: -160px !important;
-		left: -10%; !important;
-		width: 80% !important;
-	}
-	#fraMoundList .mound-grid img {
-		width: 170px !important;
-		height: 80px !important;
-	}
-	.dynastylist {
-		width: 20% !important;
-		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
-		overflow-y: hidden !important;
-	}
-}
-
-@media (max-width: 769px) {
-	/* SMALL SCREEN / PHONE */
-	.navbar a:not(:has(img[src*="logo-full-2.png"])):hover::before {
-		width: 90% !important;
-		left: 0% !important;
-	}
-	.navbar a {
-		padding-right: 14px !important;
-		padding-top: 20px !important;
-	}
-	#fraCaveList {
-	    width: 100% !important;
-	}
-	.col-md-4 {
-		width: 33% !important;
-	}
-	#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
-	    flex: 0 0 auto !important;
-	    scroll-snap-align: center !important;
-		z-index: 10 !important;
-		width: 275px !important;
-		height: 160px !important;
-	}
-	#fraCaveList {
-		padding-left: 295px;
-		padding-right: 295px;
-		width: 95% !important;
-	}
-	#fraMoundList .mound-grid {
-		top: -150px !important;
-		left: -10%; !important;
+		left: -2.5% !important;
 		width: 70% !important;
 	}
-	#fraMoundList .mound-grid img {
-		width: 170px !important;
-		height: 80px !important;
-	}
-	.dynastylist {
-		width: 20% !important;
-		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
-		overflow-y: hidden !important;
-	}
 }
 
-@media (max-width: 683px) {
-	/* SMALL SCREEN / PHONE */
-	.navbar a:not(:has(img[src*="logo-full-2.png"])):hover::before {
-		width: 90% !important;
-		left: 0% !important;
+@media (max-width: 768px) {
+	.navbar a {
+		padding-right: 12px !important;
 	}
-	#fraMoundList .mound-grid img {
-		width: 170px !important;
-		height: 80px !important;
+	#fraMoundList .mound-grid {
+		left: -2.5% !important;
+		width: 70% !important;
 	}
-	#fraCaveList {
-		width: 95% !important;
+	:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
+		top: 1250px !important;
+		width: 45% !important;
+		left: 4.55% !important;
+		height: 190px !important;		
 	}
-	.dynastylist {
-		width: 20% !important;
-		height: 100px !important;
-	}
-	.col-md-9 {
-		height: 2300px !important;
-		overflow-y: hidden !important;
-	}
-}
-
-.fapa {
-	height: 0px !important;
-}
-.sparring {
-	height: 0px !important;
-}
-.reclaim {
-	height: 0px !important;
-}
-
-
-/* PRIVATE STYLES */
-*:has(a[href*="refer.php"]) {
-	#player .center.h3 {
-		margin-top: 30px !important;
-	}
-	#player.table .top .floatright {
-		top: 68px !important;*/
-	}
-	.center a[href^="/wishlist.php"]::after {
-	    content: "View Bounties";
-	    margin-left: -125px !important;
-		transition: 0.5s !important;
-	}
-	.center a[href^="/wishlist.php"]:hover:after {
-	    margin-left: -120px !important;
-		margin: 5px;*/
-	}
-	.center a[href^="/refer.php"]::after {
-	    content: "Recruit an Ally";
-	    margin-left: -110px !important;
-		transition: 0.5s !important;
-	}
-	.center a[href^="/refer.php"]:hover:after {
-	    margin-left: -105px !important;
-		margin: 5px;
-	}
-	b:has(span)  {
-		display: none !important;
-	}
-	.fapa {
-		height: 200px !important;
-		position: absolute !important;
-		top: 2025px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		padding-top: 90px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	.fapa:after {
-		content: "You Do not have feed all, play all active" !important;
-		font-size: var(--tables-fontsize) !important;
-		color: #000;
-	}
-	*:has(.feature) .fapa:after {
-		color: #ffffff00;
-	}
-	.sparring {
-		height: 150px !important;
-		position: absolute !important;
-		top: 2255px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		padding-top: 65px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	.sparring:after {
-		content: "You have no available sub males to spar with." !important;
-		font-size: var(--tables-fontsize) !important;
-		color: #000;
-	}
-	*:has(#sparring) .sparring:after {
-		color: #ffffff00;
-	}
-	.reclaim {
-		height: 150px !important;
-		position: absolute !important;
-		top: 2437.5px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		padding-top: 65px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	.reclaim:after {
-		content: "You have no lions to reclaim." !important;
-		font-size: var(--tables-fontsize) !important;
-		color: #000;
-	}
-	*:has(#reclaim) .reclaim:after {
-		color: #ffffff00;
-	}
-	form:has(input[name="feedall"]) .feature {
-		position: absolute !important;
+	*:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature {
 		top: 1270px !important;
-		width: 87.5% !important;
-		left: 2.5% !important;
+		width: 45% !important;
+		left: 50.5% !important;
 		height: 190px !important;
-		padding-top: 25px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
 	}
-	form:has(input[name="playall"]) .feature {
-		position: absolute !important;
-		top: 1270px !important;
-		width: 87.5% !important;
-		left: 10% !important;
-		height: 190px !important;
-		padding-top: 25px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	.feature h3 {
-		font-size: var(--tables-headingfontsize) !important;
-		font-family: var(--tables-headingfont) !important;
-	}
-	.feature span {
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	#sparring {
-		position: absolute !important;
-		top: 2255px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		height: 150px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	#reclaim {
-		position: absolute !important;
-		top: 2437.5px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		height: 150px !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	.dynastycollection {
-		position: absolute !important;
-		top: 2600px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-	}
-	.col-sm-4 {
-		position: absolute !important;
-		top: 2662.5px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		width: 33% !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	.col-sm-4:nth-child(1) {
-		transform: translateX(92.5%);
-	}
-	.col-sm-4:nth-child(2) {
-		transform: translateX(185%);
-	}
-	form:has(input[name="atid"]) table.table:first-of-type {
-		position: absolute !important;
-		top: 2700px !important;
-		width: 95% !important;
-		left: 2.5% !important;	
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}	
-	form:has(input[name="atid"]) > div.left {
-		position: absolute !important;
-		top: 2750px !important;
-		width: 95% !important;
-		left: 2.5% !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	#editdetailspanel {
-		position: absolute !important;
-		top: 37.25px !important;
-		left: 0.125%;
-		width: 95% !important;
-		z-index: 10 !important;
-		font-size: var(--tables-fontsize) !important;
-		font-family: var(--tables-font) !important;
-	}
-	#editdetailspanel table {
-		width: 100% !important;
-		padding-bottom: 100px !important;
-	}
-	.col-md-9 {
-		height: 2800px !important;
-	}
-	.col-md-9:has(#editdetailspanel[style*="display: block"]) {
-		height: 3250px !important;
-	}
-}
-
-@media (max-width: 769px) {
-	/* SMALL SCREEN / PHONE */
-	*:has(a[href*="refer.php"]) {
-		form:has(input[name="feedall"]) .feature {
-			top: 1250px !important;
-			width: 43.5% !important;
-			left: 5% !important;
-		}
-		form:has(input[name="playall"]) .feature {
-			top: 1270px !important;
-			width: 43.5% !important;
-			left: 51.5% !important;
-		}
-	}
-}
-
-
-/* COLOUR SETTINGS */
-*:has(img[alt="day Time"]) {
-	/* DAY TIME SETTINGS */
-}
-
-*:has(img[alt="night Time"]) {
-	/* NIGHT TIME SETTINGS */
-}
-
-
-/* IMAGE REPLACEMENTS */
-img[src*="icon-beetle-silver.png"] {
-	width: 20px !important;
-	height: 20px !important;
-	content: var(--sbicon);
-}
-img[src*="icon-beetle-gold.png"] {
-	width: 20px !important;
-	height: 20px !important;
-	content: var(--gbicon);
-}
-img[src*="logo-full-2.png"] {
-	width: 192px !important;
-	height: 120px !important;
-	content: var(--logo);
 }

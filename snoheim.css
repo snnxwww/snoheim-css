@@ -920,6 +920,16 @@ h1 {
 	}
 }
 
+.fapa {
+	height: 0px !important;
+}
+.sparring {
+	height: 0px !important;
+}
+.reclaim {
+	height: 0px !important;
+}
+
 
 /* PRIVATE STYLES */
 *:has(a[href*="refer.php"]) {
@@ -948,21 +958,46 @@ h1 {
 		margin: 5px;
 	}
 	b:has(span)  {
+		display: none !important;
+	}
+	.fapa {
+		height: 200px !important;
+		background: #ffffff;
 		position: absolute !important;
+		top: 2025px;
+		width: 95%;
+		left: 2.5% !important;
+	}
+	.sparring {
+		height: 150px !important;
+		background: #ffffff;
+		position: absolute !important;
+		top: 2255px;
+		width: 95%;
+		left: 2.5% !important;
+	}
+	.reclaim {
+		height: 150px !important;
+		background: #ffffff;
+		position: absolute !important;
+		top: 2437.5px;
+		width: 95%;
+		left: 2.5% !important;
 	}
 	.feature {
 		position: absolute !important;
-		top: 1325px !important;
-		width: 85% !important;
-		left: 7.5% !important;
+		top: 1287.5px !important;
+		width: 75% !important;
+		left: 12.5% !important;
 		height: 150px !important;
 		gap: 0px !important;
 	}
 	#sparring {
 		position: absolute !important;
-		top: 2200px !important;
+		top: 2255px !important;
 		width: 95% !important;
 		left: 2.5% !important;
+		height: 150px !important;
 	}
 	#reclaim {
 		position: absolute !important;
@@ -972,13 +1007,13 @@ h1 {
 	}
 	.dynastycollection {
 		position: absolute !important;
-		top: 2525px !important;
+		top: 2600px !important;
 		width: 95% !important;
 		left: 2.5% !important;
 	}
 	.col-sm-4 {
 		position: absolute !important;
-		top: 2585px !important;
+		top: 2662.5px !important;
 		width: 95% !important;
 		left: 2.5% !important;
 		width: 33% !important;
@@ -991,13 +1026,13 @@ h1 {
 	}
 	form:has(input[name="atid"]) table.table:first-of-type {
 		position: absolute !important;
-		top: 2625px !important;
+		top: 2700px !important;
 		width: 95% !important;
 		left: 2.5% !important;	
 	}	
 	form:has(input[name="atid"]) > div.left {
 		position: absolute !important;
-		top: 2675px !important;
+		top: 2750px !important;
 		width: 95% !important;
 		left: 2.5% !important;
 	}
@@ -1012,76 +1047,22 @@ h1 {
 		width: 100% !important;
 		padding-bottom: 100px !important;
 	}
-	b:has(span) {
-		display: none !important;
+	.col-md-9 {
+		height: 2800px !important;
 	}
+	.col-md-9:has(#editdetailspanel[style*="display: block"]) {
+		    height: 3250px !important;
+		}
 }
+
+
 
 
 /* LAYOUT SETTINGS / PERSONAL */
 @media (min-width: 1200px) {
 	/* LARGE SCREEN / DESKTOP */
 	*:has(a[href*="refer.php"]) {
-		/* HAS: FAPA + SPARRING + RECLAIM OPTIONS */
-		.col-md-9:has(table#sparring, table#reclaim) {
-		    height: 2725px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .dynastycollection  {
-			top: 2525px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .col-sm-4 {
-			top: 2587.5px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) table.table:first-of-type {
-			top: 2628.75px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) > div.left {
-			top: 2675px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3175px !important;
-		}
-		/* HAS: FAPA + SPARRING OPTIONS */
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .dynastycollection {
-		    top: 2362.5px !important;
-		}	
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .col-sm-4 {
-		    top: 2425px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2465.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) > div.left {
-		    top: 2512.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3005px !important;
-		}
-		/* HAS: FAPA + RECLAIM OPTION */
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) #reclaim {
-		    top: 2200px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .dynastycollection {
-		    top: 2350px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .col-sm-4 {
-		    top: 2412.5px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2456.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) > div.left {
-		    top: 2506.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3005px !important;
-		}
+		
 	}
 }
 
@@ -1089,137 +1070,19 @@ h1 {
 @media (max-width: 1200px) {
 	/* LARGE SCREEN / LAPTOP + TABLET */
 	*:has(a[href*="refer.php"]) {
-		/* HAS: FAPA + SPARRING + RECLAIM OPTIONS */
-		.col-md-9:has(table#sparring, table#reclaim) {
-		    height: 2725px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .dynastycollection  {
-			top: 2525px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .col-sm-4 {
-			top: 2587.5px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) table.table:first-of-type {
-			top: 2628.75px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) > div.left {
-			top: 2675px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3175px !important;
-		}
-		/* HAS: FAPA + SPARRING OPTIONS */
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .dynastycollection {
-		    top: 2362.5px !important;
-		}	
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .col-sm-4 {
-		    top: 2425px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2465.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) > div.left {
-		    top: 2512.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3000px !important;
-		}	
-		/* HAS: FAPA + RECLAIM OPTION */	
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) #reclaim {
-		    top: 2200px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .dynastycollection {
-		    top: 2350px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .col-sm-4 {
-		    top: 2412.5px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2456.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) > div.left {
-		    top: 2506.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3005px !important;
-		}
+		
 	}
 }
 
 @media (max-width: 992px) {
 	/* SMALL SCREEN / TABLET + PHONE */
 	*:has(a[href*="refer.php"]) {
-		/* HAS: FAPA + SPARRING + RECLAIM OPTIONS */
-		.col-md-9:has(table#sparring, table#reclaim) {
-		    height: 2725px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .dynastycollection  {
-			top: 2525px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .col-sm-4 {
-			top: 2587.5px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) table.table:first-of-type {
-			top: 2628.75px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) > div.left {
-			top: 2675px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3175px !important;
-		}
-		/* HAS: FAPA + SPARRING OPTIONS */
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) {
-		    height: 2562.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .dynastycollection {
-		    top: 2362.5px !important;
-		}	
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .col-sm-4 {
-		    top: 2425px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2465.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) > div.left {
-		    top: 2512.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3012.5px !important;
-		}
-		/* HAS: FAPA + RECLAIM OPTION */
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) #reclaim {
-		    top: 2200px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .dynastycollection {
-		    top: 2350px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .col-sm-4 {
-		    top: 2412.5px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2456.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) > div.left {
-		    top: 2506.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3005px !important;
-		}
+		
 	}
 }
 
-@media (max-width: 769px) {
-	/* SMALL SCREEN / PHONE */
+/*@media (max-width: 769px) {
+	/* SMALL SCREEN / PHONE *
 	*:has(a[href*="refer.php"]) {
 		.feature {
 			top: 1267/5px !important;
@@ -1240,68 +1103,8 @@ h1 {
 			width: 95% !important;
 			left: 2.5% !important;
 		}
-		/* HAS: FAPA + SPARRING + RECLAIM OPTIONS */
-		.col-md-9:has(table#sparring, table#reclaim) {
-		    height: 2912.5px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .dynastycollection  {
-			top: 2700px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) .col-sm-4 {
-			top: 2762.5px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) table.table:first-of-type {
-			top: 2812.5px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim) form:has(input[name="atid"]) > div.left {
-			top: 2862.6px !important;
-		}
-		.col-md-9:has(table#sparring):has(table#reclaim):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3362.5px !important;
-		}
-		/* HAS: FAPA + SPARRING OPTIONS */
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .dynastycollection {
-		    top: 2362.5px !important;
-		}	
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) .col-sm-4 {
-		    top: 2425px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2465.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)) form:has(input[name="atid"]) > div.left {
-		    top: 2512.5px !important;
-		}
-		.col-md-9:has(table#sparring):not(:has(table#reclaim)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3000px !important;
-		}
-		/* HAS: FAPA + RECLAIM OPTION */
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) {
-		    height: 2550px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) #reclaim {
-		    top: 2375px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .dynastycollection {
-		    top: 2525px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) .col-sm-4 {
-		    top: 2612.5px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) table.table:first-of-type {
-		    top: 2656.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)) form:has(input[name="atid"]) > div.left {
-		    top: 2606.25px !important;
-		}
-		.col-md-9:has(table#reclaim):not(:has(table#sparring)):has(#editdetailspanel[style*="display: block"]) {
-		    height: 3005px !important;
-		}
 	}
-}
+}*/
 
 
 /* COLOUR SETTINGS */

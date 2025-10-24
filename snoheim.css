@@ -1,31 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Jim+Nightshade&family=Kings&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Island+Moments&family=Italianno&family=Jim+Nightshade&family=Lovers+Quarrel&family=Whisper&display=swap');
 
 :root {
 	/* FONT */
-	--topbar-font: "Jim Nightshade";
+	--topbar-font: "Lovers Quarrel";
 	--navbar-font: "Jim Nightshade";
 	--featurelion-headingfont: "Whisper";
-	--featurelionbutton-font: "Kings";
+	--featurelionbutton-font: "Beau Rivage";
 	--featurelion-font: "Jim Nightshade";
-	--alert-font: "Jim Nightshade";
+	--alert-font: "Island Moments";
 	--playercard-headingfont: "Whisper";
 	--playercard-font: "Jim Nightshade";
-	--about-headingfont: "Whisper";
+	--about-headingfont: "Lovers Quarrel";
 	--about-font: "Jim Nightshade";
 	--comments-font: "Jim Nightshade";
-	--caves-font: "Jim Nightshade";
-	--tables-headingfont: "Jim Nightshade";
+	--caves-font: "Island Moments";
+	--tables-headingfont: "Island Moments";
 	--tables-font: "Jim Nightshade";
-	--sidebarpanels-headingfont: "Whisper";
+	--sidebarpanels-headingfont: "Beau Rivage";
 	--sidebarpanels-font: "Jim Nightshade";
+	--chatbox-headingfont: "Island Moments";
+	--chatbox-font: "Jim Nightshade";
 
 	/* FONT SIZE */
-	--topbar-fontsize: 16px;
+	--topbar-fontsize: 18px;
 	--navbar-fontsize: 24px;
 	--featurelion-headingfontsize: 56px;
 	--featurelionbutton-fontsize: 26px;
 	--featurelion-fontsize: 16px;
-	--alert-fontsize: 12px;
+	--alert-fontsize: 16px;
 	--playercard-headingfontsize: 32px;
 	--playercard-fontsize: 15px;
 	--about-headingfontsize: 26px;
@@ -36,6 +38,8 @@
 	--tables-fontsize: 14px;
 	--sidebarpanels-headingfontsize: 24px;
 	--sidebarpanels-fontsize: 14px;
+	--chatbox-headingfontsize: 22px;
+	--chatbox-fontsize: 16px;
 
 }
 	
@@ -601,7 +605,7 @@ h1 {
 	padding-right: 275px;
     width: 100% !important;	
 }
-#fraCaveList > div.col-md-4.col-xs-6.center, #fra {
+#fraCaveList > div.col-md-4.col-xs-6.center {
     flex: 0 0 auto !important;
     scroll-snap-align: center !important;
 	z-index: 10 !important;
@@ -767,7 +771,6 @@ h1 {
 }
 .col-md-12 h3 .floatright:after {
 	content: "⟶";
-	color: #000;
 }
 a[href="./chat.php"] {
 	color: transparent !important;
@@ -775,6 +778,21 @@ a[href="./chat.php"] {
 a[href="./chat.php"]:after {
 	content: "Chat Room ⟶";	
 }
+#fra_chatContainer {
+	font-size: var(--chatbox-fontsize) !important;
+	font-family: var(--chatbox-font) !important
+}
+#label_currentChannel  {
+	height: 30px !important;
+}
+.s-chat-message {
+	font-size: var(--chatbox-fontsize) !important;
+}
+#chatMessagePinned {
+	font-size: var(--chatbox-headingfontsize) !important;
+	font-family: var(--chatbox-headingfont) !important
+}
+
 
 
 
@@ -821,7 +839,6 @@ a[href="./chat.php"]:after {
 *:has(a[href*="refer.php"]) .fapa:after {
 	content: "You Do not have feed all, play all active" !important;
 	font-size: var(--tables-fontsize) !important;
-	color: #000;
 }
 *:has(a[href*="refer.php"]) *:has(.feature) .fapa:after {
 	color: #ffffff00;
@@ -839,7 +856,6 @@ a[href="./chat.php"]:after {
 *:has(a[href*="refer.php"]) .sparring:after {
 	content: "You have no available sub males to spar with." !important;
 	font-size: var(--tables-fontsize) !important;
-	color: #000;
 }
 *:has(a[href*="refer.php"]) *:has(#sparring) .sparring:after {
 	color: #ffffff00;

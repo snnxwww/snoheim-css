@@ -1070,13 +1070,13 @@ form[action="/account-link.php"]:hover:after {
 	:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
 		top: 1250px !important;
 		width: 45% !important;
-		left: 4.55% !important;
+		left: 50.5% !important;
 		height: 190px !important;		
 	}
 	*:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature {
 		top: 1270px !important;
 		width: 45% !important;
-		left: 50.5% !important;
+		left: 4.5% !important;
 		height: 190px !important;
 	}
 }

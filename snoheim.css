@@ -8,14 +8,16 @@
 	--featurelionbutton-font: "Kings";
 	--featurelion-font: "Jim Nightshade";
 	--alert-font: "Jim Nightshade";
-	--playercard-headingfont: "Jim Nightshade";
+	--playercard-headingfont: "Whisper";
 	--playercard-font: "Jim Nightshade";
-	--about-headingfont: "Jim Nightshade";
+	--about-headingfont: "Whisper";
 	--about-font: "Jim Nightshade";
 	--comments-font: "Jim Nightshade";
 	--caves-font: "Jim Nightshade";
 	--tables-headingfont: "Jim Nightshade";
 	--tables-font: "Jim Nightshade";
+	--sidebarpanels-headingfont: "Whisper";
+	--sidebarpanels-font: "Jim Nightshade";
 
 	/* FONT SIZE */
 	--topbar-fontsize: 16px;
@@ -32,6 +34,8 @@
 	--caves-fontsize: 18px;
 	--tables-headingfontsize: 24px;
 	--tables-fontsize: 14px;
+	--sidebarpanels-headingfontsize: 24px;
+	--sidebarpanels-fontsize: 14px;
 
 }
 	
@@ -341,6 +345,10 @@ h1 {
 	top: 820px !important;
 	width: 95%;
 	left: 2.5% !important;
+	text-align: left !important;
+}
+.about-table br {
+	display: none;
 }
 .player-card {
 	padding: 10px;
@@ -386,6 +394,7 @@ h1 {
 }
 .member-online::before, .member-offline::before {
 	font-size: calc(var(--playercard-headingfontsize)*0.6) !important;
+	font-family: var(--playercard-font) !important;
     margin-left: -85px !important; 
 	padding-right: 10px !important;
 }
@@ -524,6 +533,10 @@ h1 {
 	overflow-y: auto !important;
 	height: 450px !important;
 }
+.link-box h3 {
+	font-size: var(--about-headingfontsize) !important;
+	font-family: var(--about-headingfont) !important
+}
 .link-box a {
 	font-size: var(--about-fontsize) !important;
 	text-decoration: none !important;
@@ -575,7 +588,7 @@ h1 {
 }
 #fraOrganizationBlock .col-md-4 {
 	width: 33% !important;
-	}
+}
 #fraCaveList {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -609,7 +622,7 @@ h1 {
 }
 #fraCaveList > div:nth-child(4) {
 	order: 1; 
-	padding-left: 0px !important
+	padding-left: 0px !important;
 }
 #fraCaveList > div:nth-child(5) {
 	order: 3; 
@@ -734,6 +747,35 @@ h1 {
 	height: 2300px !important;
 	overflow-y: hidden !important;
 }
+
+/* SIDEBAR */
+
+
+.row:nth-child(2){
+	
+}
+.panel-body {
+	font-size: var(--sidebarpanels-fontsize) !important;
+	font-family: var(--sidebarpanels-font) !important;
+}
+.col-md-12 h3 {
+	font-size: var(--sidebarpanels-headingfontsize) !important;
+	font-family: var(--sidebarpanels-headingfont) !important;
+}
+.col-md-12 h3 .floatright {
+	color: transparent !important;
+}
+.col-md-12 h3 .floatright:after {
+	content: "⟶";
+	color: #000;
+}
+a[href="./chat.php"] {
+	color: transparent !important;
+}
+a[href="./chat.php"]:after {
+	content: "Chat Room ⟶";	
+}
+
 
 
 *:has(a[href*="refer.php"]) center .alert {

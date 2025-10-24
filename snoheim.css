@@ -589,7 +589,8 @@ h1 {
 	content: "⟶";
 	margin-left: -30px !important;
 	display: inline-block !important;
-	transition: 0.5s !important
+	transition: 0.5s !important;
+	pointer-events: none !important;
 }
 #makeComment:hover:after {
 	transform: translateX(5px) !important;
@@ -976,6 +977,22 @@ form[action="/account-link.php"]:hover:after {
 	height: 150px !important;
 	font-size: var(--tables-fontsize) !important;
 	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="sparwithsub"]) input[type="submit"] {
+	background: transparent !important;
+	color: transparent !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="sparwithsub"]):after {
+	content: "⟶";
+	display: inline-block !important;
+	position: absolute !important;
+	margin-left: -35px !important;
+	transform: translateY(4px) !important;
+	transition: 0.5s !important;
+	pointer-events: none !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="sparwithsub"]):hover:after {
+	transform: translateX(5px) translateY(4px) !important;
 }
 *:has(a[href*="refer.php"]) #reclaim {
 	position: absolute !important;

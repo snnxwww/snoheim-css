@@ -1003,6 +1003,27 @@ form[action="/account-link.php"]:hover:after {
 	font-size: var(--tables-fontsize) !important;
 	font-family: var(--tables-font) !important;
 }
+td.right.center select {
+	margin-top: 5px !important;
+}
+td.right.center input {
+	background: transparent !important;
+	color: transparent !important;
+}
+td.right.center input:nth-of-type(2) {
+	display: none !important;
+}
+td.right.center:has(input[name="reclaim"]):before {
+	content: "Reclaim ⟶";
+	transform: translateX(20px) translateY(5px);
+	position: absolute !important;
+	pointer-events: none !important;
+	transition: 0.5s !important;
+}
+td.right.center:has(input[name="reclaim"]):hover:before {
+	transform: translateX(25px) translateY(5px);
+}
+
 *:has(a[href*="refer.php"]) .dynastycollection {
 	position: absolute !important;
 	top: 2600px !important;

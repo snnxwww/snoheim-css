@@ -733,6 +733,20 @@ h1 {
 	width: 95% !important;
 	left: 2.5% !important;
 }
+form input[name="attack"] {
+	background: transparent !important;
+	color: transparent !important;
+}
+form:has(input[name="attack"]):after {
+    content: "⟶";
+	position: absolute !important;
+	transform: translateX(-45px) !important;
+    pointer-events: none !important; 
+	transition: 0.5s !important
+}
+form:has(input[name="attack"]):hover:after {
+	transform: translateX(-40px) !important;
+}
 
 /* ALLIES */
 #allies {

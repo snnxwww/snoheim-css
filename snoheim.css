@@ -1003,24 +1003,24 @@ form[action="/account-link.php"]:hover:after {
 	font-size: var(--tables-fontsize) !important;
 	font-family: var(--tables-font) !important;
 }
-td.right.center select {
+*:has(a[href*="refer.php"]) td.right.center select {
 	margin-top: 5px !important;
 }
-td.right.center input {
+*:has(a[href*="refer.php"]) td.right.center input {
 	background: transparent !important;
 	color: transparent !important;
 }
-td.right.center input:nth-of-type(2) {
+*:has(a[href*="refer.php"]) td.right.center input:nth-of-type(2) {
 	display: none !important;
 }
-td.right.center:has(input[name="reclaim"]):before {
+*:has(a[href*="refer.php"]) td.right.center:has(input[name="reclaim"]):before {
 	content: "Reclaim ⟶";
 	transform: translateX(20px) translateY(5px);
 	position: absolute !important;
 	pointer-events: none !important;
 	transition: 0.5s !important;
 }
-td.right.center:has(input[name="reclaim"]):hover:before {
+*:has(a[href*="refer.php"]) td.right.center:has(input[name="reclaim"]):hover:before {
 	transform: translateX(25px) translateY(5px);
 }
 
@@ -1079,6 +1079,24 @@ td.right.center:has(input[name="reclaim"]):hover:before {
 }
 *:has(a[href*="refer.php"]) .col-md-9:has(#editdetailspanel[style*="display: block"]) {
 	height: 3250px !important;
+}
+*:has(a[href*="refer.php"]) td.bottom input[name="update"] {
+	transform: translateX(310px) !important;
+	background: transparent !important;
+	color: transparent !important;
+}
+*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):after {
+	content: "Save ⟶";
+	position: absolute !important;
+	transform: translateX(270px) translateY(2.5px);
+	pointer-events: none !important;
+	transition: 0.5s !important;
+}
+*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
+	transform: translateX(275px) translateY(2.5px);
+}
+*:has(a[href*="refer.php"]) .col-md-9:has(#editdetailspanel[style*="display: block"]) center .alert {
+	top: 16.5% !important;
 }
 
 @media (max-width: 1200px) {

@@ -733,20 +733,6 @@ h1 {
 	width: 95% !important;
 	left: 2.5% !important;
 }
-form input[name="attack"] {
-	background: transparent !important;
-	color: transparent !important;
-}
-form:has(input[name="attack"]):after {
-    content: "⟶";
-	position: absolute !important;
-	transform: translateX(-45px) !important;
-    pointer-events: none !important; 
-	transition: 0.5s !important
-}
-form:has(input[name="attack"]):hover:after {
-	transform: translateX(-40px) !important;
-}
 
 /* ALLIES */
 #allies {
@@ -809,20 +795,53 @@ a[href="./chat.php"]:after {
 }
 #fra_chatContainer {
 	font-size: var(--chatbox-fontsize) !important;
-	font-family: var(--chatbox-font) !important
+	font-family: var(--chatbox-font) !important;
+	overflow-x: hidden !important;
 }
 #label_currentChannel  {
 	height: 30px !important;
 }
+.chatMenu-container {
+	font-size: var(--chatbox-fontsize) !important;
+	font-family: var(--chatbox-font) !important;
+}
 .s-chat-message {
 	font-size: var(--chatbox-fontsize) !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+.hasContext {
+	border-left: 5px solid !important;
+}
+.s-chat-message_timestamp {
+	padding-left: 5px !important
 }
 #chatMessagePinned {
 	font-size: var(--chatbox-headingfontsize) !important;
 	font-family: var(--chatbox-headingfont) !important
 }
-/*form[action="/account-link.php"] {
-	font-size: var(--chatbox-headingfontsize) !important;
+#fraChatSettingsMenu {
+	display: inline-block !important;
+	width: 160px !important;
+	transform: translateX(27.5px) !important;
+}
+#btnChatSend {
+    background: transparent !important;
+    color: transparent !important;
+}
+#txtChatContainer:after {
+    content: "⟶"; 
+    pointer-events: none;
+	position: absolute !important;
+	margin-top: -25px !important;
+	right: 5px !important;
+	transition: 0.5s !important;
+}
+#txtChatContainer:hover:after {
+	right: 0px !important;
+}
+form[action="/account-link.php"] {
+	font-size: var(--chatbox-gfontsize) !important;
 	font-family: var(--chatbox-font) !important;
 }
 form[action="/account-link.php"] button {
@@ -832,15 +851,15 @@ form[action="/account-link.php"] button {
 form[action="/account-link.php"]:after {
 	content: "Switch Account ⟶";
 	position: absolute !important;
-	left: 25% !important;
-	transform: translateY(-35px) !important;
+	margin-top: -30px !important;
+	left: 35% !important;
 	display: inline-block !important;
 	transition: 0.5s !important;
 	pointer-events: none !important;
 }
 form[action="/account-link.php"]:hover:after {
-	transform:translateX(5px) translateY(-35px) !important;
-}*/
+	margin-left: 5px !important;
+}
 
 
 
@@ -1095,19 +1114,19 @@ form[action="/account-link.php"]:hover:after {
 	height: 3250px !important;
 }
 *:has(a[href*="refer.php"]) td.bottom input[name="update"] {
-	transform: translateX(310px) !important;
+	transform: translateX(380px) !important;
 	background: transparent !important;
 	color: transparent !important;
 }
 *:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):after {
 	content: "Save ⟶";
 	position: absolute !important;
-	transform: translateX(270px) translateY(2.5px);
+	transform: translateX(340px) translateY(2.5px);
 	pointer-events: none !important;
 	transition: 0.5s !important;
 }
 *:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
-	transform: translateX(275px) translateY(2.5px);
+	transform: translateX(345px) translateY(2.5px);
 }
 *:has(a[href*="refer.php"]) .col-md-9:has(#editdetailspanel[style*="display: block"]) center .alert {
 	top: 16.5% !important;
@@ -1117,7 +1136,17 @@ form[action="/account-link.php"]:hover:after {
 	.navbar a {
 		padding-right: 18px !important;
 	}
+	*:has(a[href*="refer.php"]) td.bottom input[name="update"] {
+		transform: translateX(310px) !important;
+	}
+	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):after {
+		transform: translateX(270px) translateY(2.5px);
+	}
+	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
+		transform: translateX(275px) translateY(2.5px);
+	}
 }
+
 
 @media (max-width: 992px) {
 	.navbar a {
@@ -1126,6 +1155,18 @@ form[action="/account-link.php"]:hover:after {
 	#fraMoundList .mound-grid {
 		left: -2.5% !important;
 		width: 70% !important;
+	}
+	*:has(a[href*="refer.php"]) td.bottom input[name="update"] {
+		transform: translateX(320px) !important;
+	}
+	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):after {
+		transform: translateX(278px) translateY(2.5px);
+	}
+	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
+		transform: translateX(285px) translateY(2.5px);
+	}
+	form[action="/account-link.php"]:after {
+		left: 45% !important;
 	}
 }
 

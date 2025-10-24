@@ -987,7 +987,7 @@ a[href="./chat.php"]:after {
 		padding-right: 12px !important;
 	}
 	#fraMoundList .mound-grid {
-		left: -2.5% !important;
+		left: -7.5% !important;
 		width: 70% !important;
 	}
 	:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {

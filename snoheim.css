@@ -806,8 +806,8 @@ a[href="./chat.php"]:after {
 	font-size: var(--chatbox-headingfontsize) !important;
 	font-family: var(--chatbox-headingfont) !important
 }
-form[action="/account-link.php"] {
-	font-size: var(--chatbox-fontsize) !important;
+/*form[action="/account-link.php"] {
+	font-size: var(--chatbox-headingfontsize) !important;
 	font-family: var(--chatbox-font) !important;
 }
 form[action="/account-link.php"] button {
@@ -817,7 +817,7 @@ form[action="/account-link.php"] button {
 form[action="/account-link.php"]:after {
 	content: "Switch Account ⟶";
 	position: absolute !important;
-	margin-left: 60px !important;
+	left: 25% !important;
 	transform: translateY(-35px) !important;
 	display: inline-block !important;
 	transition: 0.5s !important;
@@ -825,7 +825,7 @@ form[action="/account-link.php"]:after {
 }
 form[action="/account-link.php"]:hover:after {
 	transform:translateX(5px) translateY(-35px) !important;
-}
+}*/
 
 
 

@@ -806,6 +806,28 @@ a[href="./chat.php"]:after {
 	font-size: var(--chatbox-headingfontsize) !important;
 	font-family: var(--chatbox-headingfont) !important
 }
+form[action="/account-link.php"] {
+	font-size: var(--chatbox-fontsize) !important;
+	font-family: var(--chatbox-font) !important;
+}
+form[action="/account-link.php"] button {
+	background: transparent !important;
+	color: transparent !important;
+}
+form[action="/account-link.php"]:after {
+	content: "Switch Account ⟶";
+	position: absolute !important;
+	margin-left: 60px !important;
+	transform: translateY(-35px) !important;
+	display: inline-block !important;
+	transition: 0.5s !important;
+	pointer-events: none !important;
+}
+form[action="/account-link.php"]:hover:after {
+	transform:translateX(5px) translateY(-35px) !important;
+}
+
+
 
 
 /* LAYOUT FIXES */

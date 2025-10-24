@@ -791,12 +791,7 @@ a[href="./chat.php"] {
 }
 a[href="./chat.php"]:after {
 	content: "Chat Room ⟶";	
-	pointer-events: none !important;
-	margin-left: -57.5px !important;
-	transition: 0.5s !important
-}
-a[href="./chat.php"]:hover:after {
-	margin-left: -59.9px !important;
+	pointer-events: none !important; 
 }
 #fra_chatContainer {
 	font-size: var(--chatbox-fontsize) !important;
@@ -821,9 +816,6 @@ a[href="./chat.php"]:hover:after {
 .s-chat-message_timestamp {
 	padding-left: 5px !important
 }
-#btnToggleSidebarChat {
-	background: transparent !important;
-}
 #chatMessagePinned {
 	font-size: var(--chatbox-headingfontsize) !important;
 	font-family: var(--chatbox-headingfont) !important
@@ -837,15 +829,16 @@ a[href="./chat.php"]:hover:after {
     background: transparent !important;
     color: transparent !important;
 }
-div:has(#btnChatSend):after {
+#txtChatContainer:after {
     content: "⟶"; 
     pointer-events: none;
 	position: absolute !important;
-	transform: translateX(240px) translateY(-27.5px )!important;
+	margin-top: -25px !important;
+	right: 5px !important;
 	transition: 0.5s !important;
 }
-div:has(#btnChatSend):hover:after {
-	transform: translateX(245px) translateY(-27.5px )!important
+#txtChatContainer:hover:after {
+	right: 0px !important;
 }
 form[action="/account-link.php"] {
 	font-size: var(--chatbox-gfontsize) !important;
@@ -858,14 +851,14 @@ form[action="/account-link.php"] button {
 form[action="/account-link.php"]:after {
 	content: "Switch Account ⟶";
 	position: absolute !important;
-	left: 25% !important;
-	transform: translateX(30px) translateY(-35px) !important;
+	margin-top: -30px !important;
+	left: 35% !important;
 	display: inline-block !important;
 	transition: 0.5s !important;
 	pointer-events: none !important;
 }
 form[action="/account-link.php"]:hover:after {
-	transform:translateX(35px) translateY(-35px) !important;
+	margin-left: 5px !important;
 }
 
 
@@ -1152,19 +1145,8 @@ form[action="/account-link.php"]:hover:after {
 	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
 		transform: translateX(275px) translateY(2.5px);
 	}
-	div:has(#btnChatSend):after {
-		transform: translateX(190px) translateY(-27.5px )!important;
-	}
-	div:has(#btnChatSend):hover:after {
-		transform: translateX(195px) translateY(-27.5px )!important;
-	}
-	form[action="/account-link.php"]:after {
-		transform: translateX(20px) translateY(-35px) !important;
-	}
-	form[action="/account-link.php"]:hover:after {
-		transform:translateX(25px) translateY(-35px) !important;
-	}
 }
+
 
 @media (max-width: 992px) {
 	.navbar a {
@@ -1183,17 +1165,8 @@ form[action="/account-link.php"]:hover:after {
 	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
 		transform: translateX(285px) translateY(2.5px);
 	}
-	div:has(#btnChatSend):after {
-		transform: translateX(700px) translateY(-27.5px ) !important;
-	}
-	div:has(#btnChatSend):hover:after {
-		transform: translateX(705px) translateY(-27.5px ) !important;
-	}
 	form[action="/account-link.php"]:after {
-		transform: translateX(150px) translateY(-35px) !important;
-	}
-	form[action="/account-link.php"]:hover:after {
-		transform:translateX(155px) translateY(-35px) !important;
+		left: 45% !important;
 	}
 }
 

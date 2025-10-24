@@ -1045,7 +1045,7 @@ form[action="/account-link.php"]:hover:after {
 
 @media (max-width: 1200px) {
 	.navbar a {
-		padding-right: 20px !important;
+		padding-right: 18px !important;
 	}
 }
 

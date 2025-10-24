@@ -51,6 +51,7 @@
 	border: none !important;
 	border-radius: 0px !important;
 	box-shadow: none !important;
+	text-shadow: none !important;
 	background-repeat: no-repeat !important;
 	transition: 0.5s !important;
 	scrollbar-width: none !important;
@@ -580,6 +581,19 @@ h1 {
 	font-size: var(--comments-fontsize) !important;
 	font-family: var(--comments-font) !important;
 }
+#makeComment #postComment {
+	background: transparent !important;
+	color: #ffffff00 !important;
+}
+#makeComment:after {
+	content: "⟶";
+	margin-left: -30px !important;
+	display: inline-block !important;
+	transition: 0.5s !important
+}
+#makeComment:hover:after {
+	transform: translateX(5px) !important;
+}
 
 /* CAVES AND MOUNDS */
 #fraOrganizationBlock {
@@ -753,8 +767,6 @@ h1 {
 }
 
 /* SIDEBAR */
-
-
 .row:nth-child(2){
 	
 }
@@ -771,12 +783,14 @@ h1 {
 }
 .col-md-12 h3 .floatright:after {
 	content: "⟶";
+	pointer-events: none !important; 
 }
 a[href="./chat.php"] {
 	color: transparent !important;
 }
 a[href="./chat.php"]:after {
 	content: "Chat Room ⟶";	
+	pointer-events: none !important; 
 }
 #fra_chatContainer {
 	font-size: var(--chatbox-fontsize) !important;
@@ -794,8 +808,7 @@ a[href="./chat.php"]:after {
 }
 
 
-
-
+/* LAYOUT FIXES */
 *:has(a[href*="refer.php"]) center .alert {
 	top: 19.25% !important;
 }
@@ -837,11 +850,11 @@ a[href="./chat.php"]:after {
 	font-family: var(--tables-font) !important;
 }
 *:has(a[href*="refer.php"]) .fapa:after {
-	content: "You Do not have feed all, play all active" !important;
+	content: "You do not have feed all, play all active" !important;
 	font-size: var(--tables-fontsize) !important;
 }
 *:has(a[href*="refer.php"]) *:has(.feature) .fapa:after {
-	color: #ffffff00;
+	color: transparent !important;
 }
 *:has(a[href*="refer.php"]) .sparring {
 	height: 150px !important;
@@ -858,7 +871,7 @@ a[href="./chat.php"]:after {
 	font-size: var(--tables-fontsize) !important;
 }
 *:has(a[href*="refer.php"]) *:has(#sparring) .sparring:after {
-	color: #ffffff00;
+	color: transparent !important;
 }
 *:has(a[href*="refer.php"]) .reclaim {
 	height: 150px !important;
@@ -875,7 +888,7 @@ a[href="./chat.php"]:after {
 	font-size: var(--tables-fontsize) !important;
 }
 *:has(a[href*="refer.php"]) *:has(#reclaim) .reclaim:after {
-	color: #ffffff00;
+	color: transparent !important;
 }
 *:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
 	position: absolute !important;
@@ -887,6 +900,20 @@ a[href="./chat.php"]:after {
 	font-size: var(--tables-fontsize) !important;
 	font-family: var(--tables-font) !important;
 }
+*:has(a[href*="refer.php"]) form:has(input[name="feedall"]) input {
+	background: transparent !important;
+	color: transparent !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature:after {
+	content: "Feed pride ⟶";
+	margin-left: -55px !important;
+	display: inline-block !important;
+	transition: 0.5s !important;
+	pointer-events: none !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature:hover:after {
+	transform: translateX(5px);
+}
 *:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature {
 	position: absolute !important;
 	top: 1270px !important;
@@ -896,6 +923,20 @@ a[href="./chat.php"]:after {
 	padding-top: 25px !important;
 	font-size: var(--tables-fontsize) !important;
 	font-family: var(--tables-font) !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="playall"]) input {
+	background: transparent !important;
+	color: transparent !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature:after {
+	content: "Interact with pride ⟶";
+	margin-left: -100px !important;
+	display: inline-block !important;
+	transition: 0.5s !important;
+	pointer-events: none !important;
+}
+*:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature:hover:after {
+	transform: translateX(5px);
 }
 *:has(a[href*="refer.php"]) .feature h3 {
 	font-size: var(--tables-headingfontsize) !important;
@@ -980,8 +1021,6 @@ a[href="./chat.php"]:after {
 	height: 3250px !important;
 }
 
-
-/* LAYOUT FIXES */
 @media (max-width: 1200px) {
 	.navbar a {
 		padding-right: 20px !important;

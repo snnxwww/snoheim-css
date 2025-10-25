@@ -882,15 +882,19 @@ form[action="/account-link.php"]:hover:after {
 	width: 95% !important;
 	top: 17% !important;
 	background: transparent !important;
-	z-index: 50;
+	z-index: 50 !important;
+	color: transparent !important;
 }
-*:has(a[href*="refer.php"]).feature.auto {
-	top: 14% !important;
-}
-
 .feature.auto form {
 	position: absolute !important;
 	left: 5% !important;
+	top: 150px !important;
+}
+*:has(a[href*="refer.php"]) .feature.auto {
+	top: 14% !important;
+}
+*:has(a[href*="refer.php"]) .feature.auto form {
+	left: 9% !important;
 	top: 150px !important;
 }
 

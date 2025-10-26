@@ -876,7 +876,7 @@ form[action="/account-link.php"]:hover:after {
 	margin-left: 5px !important;
 }
 
-/* OCTOBER TRICK OR TREATING */
+/* OCTOBER / TRICK OR TREATING */
 *:has(img[src*="icon_beetleblood.png"]):has(img[src*="pumpkin"]) .feature.auto {
 	position: absolute !important;
 	width: 95% !important;
@@ -887,8 +887,8 @@ form[action="/account-link.php"]:hover:after {
 }
 *:has(img[src*="icon_beetleblood.png"]):has(img[src*="pumpkin"]) .feature.auto form {
 	position: absolute !important;
-	left: 5% !important;
 	top: 150px !important;
+	left: 10% !important;
 }
 *:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) .feature.auto {
 	top: 14% !important;
@@ -897,6 +897,7 @@ form[action="/account-link.php"]:hover:after {
 	left: 9% !important;
 	top: 150px !important;
 }
+
 *:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) form:has(input[name="feedall"]) .feature {
 	top: 1235px !important;
 	height: 190px !important;		
@@ -915,7 +916,7 @@ form[action="/account-link.php"]:hover:after {
 	margin-top: 30px !important;
 }
 *:has(a[href*="refer.php"]) #player.table .top .floatright {
-	top: 68px !important;*/
+	top: 68px !important;
 }
 *:has(a[href*="refer.php"]) .center a[href^="/wishlist.php"]::after {
     content: "View Bounties";
@@ -924,7 +925,7 @@ form[action="/account-link.php"]:hover:after {
 }
 *:has(a[href*="refer.php"]) .center a[href^="/wishlist.php"]:hover:after {
 	margin-left: -120px !important;
-	margin: 5px;*/
+	margin: 5px;
 }
 *:has(a[href*="refer.php"]) .center a[href^="/refer.php"]::after {
 	content: "Recruit an Ally";
@@ -1188,6 +1189,9 @@ form[action="/account-link.php"]:hover:after {
 	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
 		transform: translateX(275px) translateY(2.5px);
 	}
+	*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) .feature.auto form {
+		left: 11% !important;
+	}
 }
 
 
@@ -1207,9 +1211,6 @@ form[action="/account-link.php"]:hover:after {
 	}
 	*:has(a[href*="refer.php"]) td.bottom:has(input[name="update"]):hover:after {
 		transform: translateX(285px) translateY(2.5px);
-	}
-	form[action="/account-link.php"]:after {
-		left: 45% !important;
 	}
 }
 
@@ -1241,4 +1242,3 @@ form[action="/account-link.php"]:hover:after {
 		top: 1235px !important;
 	}
 }
-

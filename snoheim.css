@@ -876,8 +876,8 @@ form[action="/account-link.php"]:hover:after {
 	margin-left: 5px !important;
 }
 
-
-.feature.auto {
+/* OCTOBER TRICK OR TREATING */
+*:has(img[src*="icon_beetleblood.png"]):has(img[src*="pumpkin"]) .feature.auto {
 	position: absolute !important;
 	width: 95% !important;
 	top: 17% !important;
@@ -885,20 +885,25 @@ form[action="/account-link.php"]:hover:after {
 	z-index: 50 !important;
 	color: transparent !important;
 }
-.feature.auto form {
+*:has(img[src*="icon_beetleblood.png"]):has(img[src*="pumpkin"]) .feature.auto form {
 	position: absolute !important;
 	left: 5% !important;
 	top: 150px !important;
 }
-*:has(a[href*="refer.php"]) .feature.auto {
+*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) .feature.auto {
 	top: 14% !important;
 }
-*:has(a[href*="refer.php"]) .feature.auto form {
+*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) .feature.auto form {
 	left: 9% !important;
 	top: 150px !important;
 }
-
-
+*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) form:has(input[name="feedall"]) .feature {
+	top: 1235px !important;
+	height: 190px !important;		
+}
+*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) form:has(input[name="playall"]) .feature {
+	top: 1235px !important;
+}
 
 
 
@@ -986,7 +991,7 @@ form[action="/account-link.php"]:hover:after {
 }
 *:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
 	position: absolute !important;
-	top: 1270px !important;
+	top: 1250px !important;
 	width: 87.5% !important;
 	left: 2.5% !important;
 	height: 190px !important;
@@ -1010,7 +1015,7 @@ form[action="/account-link.php"]:hover:after {
 }
 *:has(a[href*="refer.php"]) form:has(input[name="playall"]) .feature {
 	position: absolute !important;
-	top: 1270px !important;
+	top: 1250px !important;
 	width: 87.5% !important;
 	left: 10% !important;
 	height: 190px !important;
@@ -1216,7 +1221,7 @@ form[action="/account-link.php"]:hover:after {
 		left: -7.5% !important;
 		width: 70% !important;
 	}
-	:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
+	*:has(a[href*="refer.php"]) form:has(input[name="feedall"]) .feature {
 		top: 1250px !important;
 		width: 45% !important;
 		left: 50.5% !important;
@@ -1228,4 +1233,12 @@ form[action="/account-link.php"]:hover:after {
 		left: 4.5% !important;
 		height: 190px !important;
 	}
+	*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) form:has(input[name="feedall"]) .feature {
+		top: 1225px !important;
+		height: 190px !important;		
+	}
+	*:has(img[src*="icon_beetleblood.png"]):has(a[href*="refer.php"]):has(img[src*="pumpkin"]) form:has(input[name="playall"]) .feature {
+		top: 1235px !important;
+	}
 }
+

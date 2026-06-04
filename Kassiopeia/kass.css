@@ -427,6 +427,9 @@ span[style="color: #ff0000;"] {
 .panel a, .sidebar h3, .sidebar a, #txtChatContainer a {
     color: #f2f0ec;
 }
+.sidebar a:has(h3) {
+    display: block !important;
+}
 .progress {
     background: #c1b1a4;
 }

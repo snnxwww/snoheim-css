@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://snnxwww.github.io/snows-css/Kassiopeia/kass.css" />
+
+<div class="feature-display"><img src="https://snnxwww.github.io/snows-css/Kassiopeia/kass-274942.png" style="padding-top:15.5%;" alt="" /></div>
+
+<div class="boxsection"><div class="contentheader"><b>Snow #555179</b> | she/her | LDT +1 | side account</div><div class="contentsubheader"><a href="https://www.lioden.com/territory.php?id=553411">main account</a> | <a href="https://www.lioden.com/topic.php?id=304429612423">html & css layouts shop</a> | <a href="#">free html & css layouts</a> </div><div class="contentsection"><div class="contentbox"><div class="contentsubsubheader">About</div><div class="maincontent">Hi! This is my side account. I might not always be rolling this account so if you ever need something please message my main account.
+
+Feel free to message me if you need anything! I don't bite, I promise. Always happy to help with food, amusement, crafting items, coding advice, etc.
+
+I get busy! For a quicker response message my main account.</div></div><div class="imagecontent"><img src="https://snnxwww.github.io/snows-css/Kassiopeia/kassiopeia-481560.gif" width="100%" style="min-width:300px;" alt="" /></div>
+</div></div>
+
+<img class="pagedoll" src="https://snnxwww.github.io/snows-css/Kassiopeia/kassi-505122.gif" alt="" />
+
+<div class="page"><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div></div>

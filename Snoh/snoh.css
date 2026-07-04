@@ -275,7 +275,12 @@ h1 {
     margin-bottom: 0px
 }
 
-
+.main-content {
+    height: 400px;
+    padding: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 
 #player .top,
 #player .inner-table,
